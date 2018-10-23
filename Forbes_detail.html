@@ -170,6 +170,33 @@
 		article:first-of-type {
 			padding-top: 0;
 		}
+
+		.header__right {
+			display: -webkit-box;
+			display: -webkit-flex;
+			display: -ms-flexbox;
+			display: flex;
+			position: absolute;
+			right: 1rem;
+			height: 100%;
+			top: 0;
+			z-index: 999999;
+			color: #fcfcfc;
+		}
+
+		.fs-icon--search {
+			width: 20px;
+		}
+
+		.fs-icon--search {
+			color: #fff;
+		}
+
+		.fs-icon {
+			fill: #fff;
+			height: 20px;
+			pointer-events: none;
+		}
 	</style>
 
 
@@ -211,10 +238,15 @@
 </script>
 	</amp-state>
 	<div class="logo-header inner-contain" id="top" role="banner" i-amphtml-fixedid="F1" style="top: calc(0px);"></div>
-
+	<div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 	<div class="mylogo">
 		<h3>The News Outlet</h3>
 	</div>
+	
 
 
 	<span class="vertical-bar"></span><button class="share-icon" aria-label="Open Share Modal" on="tap:share-lightbox"
