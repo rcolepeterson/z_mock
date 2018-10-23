@@ -142,7 +142,7 @@
 		.mylogo {
 			color: white;
 			display: block;
-			margin-left: 16px;
+			margin-left: 46px;
 			margin-top: 13px;
 			position: absolute;
 			z-index: 99999;
@@ -197,6 +197,29 @@
 			height: 20px;
 			pointer-events: none;
 		}
+
+		#menu-button {
+			position: fixed;
+			top: 0;
+			left: 0;
+			display: block;
+			width: 50px;
+			height: 50px;
+			/* background: #111; */
+			border-radius: 5px;
+			z-index: 200;
+		}
+
+		#menu-button:after {
+			position: absolute;
+			content: "☰";
+			font-size: 26px;
+			color: #FFF;
+			width: 50px;
+			height: 50px;
+			text-align: center;
+			line-height: 46px;
+		}
 	</style>
 
 
@@ -238,15 +261,11 @@
 </script>
 	</amp-state>
 	<div class="logo-header inner-contain" id="top" role="banner" i-amphtml-fixedid="F1" style="top: calc(0px);"></div>
-	<div class="hamburger">
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+	<a id="menu-button"></a>
 	<div class="mylogo">
 		<h3>The News Outlet</h3>
 	</div>
-	
+
 
 
 	<span class="vertical-bar"></span><button class="share-icon" aria-label="Open Share Modal" on="tap:share-lightbox"
