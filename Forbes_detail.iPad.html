@@ -140,7 +140,7 @@
 		}
 
 		.logo-header {
-			z-index: 9999;
+			z-index: 999999999;
 		}
 
 		.mylogo {
@@ -306,11 +306,54 @@
 			filter: blur(6px);
 		}
 
-		#contentArticle.on {
-			/* filter: blur(12px); */
+		#ZCMZ-564325>iframe {
+			width: 100% !important;
+			top: 48px;
 		}
 	</style>
 
+	<style>
+		/* back button */
+
+		#backButton {
+  		display: inline-block;
+  		vertical-align: middle;
+			right: 10px;
+    position: absolute;
+		z-index: 999999;
+		}
+
+		a {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+
+
+.left {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border: 5px solid white;
+  border-radius: 50%;
+  /* margin-right: 1.5em; */
+}
+
+.left:after {
+  content: '';
+	display: inline-block;
+  margin-top: 6px;
+  margin-left: 0.5em;
+  width: 12px;
+  height: 12px;
+  border-top: 4px solid #fff;
+  border-right: 4px solid #fff;
+  -moz-transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+	</style>
 
 
 </head>
@@ -329,6 +372,11 @@
 		<a id="menu-button"></a>
 		<div class="mylogo">
 			<h3>The News Outlet</h3>
+		</div>
+		<div id="backButton">
+			<a href="#">
+				<span class="left"></span>
+			</a>
 		</div>
 	</div>
 
@@ -1320,7 +1368,7 @@
 		// });
 
 		var main = document.querySelector("#contentArticle");
-		console.log(main);
+		//console.log(main);
 		main.addEventListener('click', function (event) {
 			event.preventDefault();
 			event.stopPropagation();
@@ -1329,13 +1377,24 @@
 
 			return false;
 		});
-		var zclose = document.querySelector('#zclose');
-		zclose.addEventListener('click', function (event) {
-			//document.querySelector('.z-main-wrapper').classList.toggle("on");
+		// var zclose = document.querySelector('#zclose');
+		// zclose.addEventListener('click', function (event) {
+		// 	//document.querySelector('.z-main-wrapper').classList.toggle("on");
+		// 	event.preventDefault();
+		// 	event.stopPropagation();
+		// 	window.open("./index.html", "_self")
+		// });
+
+
+		var backButton = document.querySelector('#backButton');
+		backButton.addEventListener('click', function (event) {
+			console.log("do it");
 			event.preventDefault();
 			event.stopPropagation();
-			window.open("./Forbes_detail.iPad.html", "_self")
+			window.open("./index.html", "_self")
 		});
+
+		console.log(backButton);
 
 	</script>
 
