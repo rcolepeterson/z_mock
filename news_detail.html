@@ -29,7 +29,7 @@
 	</script>
 
 
-	<title>Example: Game-Changing Sports Cars and SUVs</title>
+	<title>Game-Changing Sports Cars and SUVs</title>
 	<meta name="referrer" content="no-referrer-when-downgrade">
 	<link rel="canonical" itemprop="url" href="https://www.forbes.com/sites/jimgorzelany/2018/09/28/2019-car-guide-game-changing-sedans-sports-cars-and-suvs/">
 	<link rel="amphtml" href="https://www.forbes.com/sites/jimgorzelany/2018/09/28/2019-car-guide-game-changing-sedans-sports-cars-and-suvs/amp/">
@@ -140,7 +140,7 @@
 		}
 
 		.logo-header {
-			z-index: 999999999;
+			z-index: 99999999;
 		}
 
 		.mylogo {
@@ -170,6 +170,10 @@
 			max-width: 100% !important;
 		}
 
+		.border-clickable {
+			border: 5px solid yellow;
+			color: yellow !important;
+		}
 
 
 		article:first-of-type {
@@ -229,20 +233,22 @@
 		.z-main-wrapper {
 			position: fixed;
 			display: none;
-			z-index: 99999;
-			top: 0px;
+			z-index: 2;
+			top: 70px;
 			width: 100%;
 			opacity: 0;
 			transition: top 750ms cubic-bezier(0.17, 0.04, 0.03, 0.94);
 		}
 
 		.z-main-wrapper.on {
-
+			z-index: 2;
 			display: block;
 			opacity: 1
 		}
 
-
+		.z-main {
+			margin-top: 10px;
+		}
 
 		.z-main {
 			/* //background: #f4f4f4; */
@@ -263,10 +269,10 @@
 
 		/* // custom close btn */
 		.close {
-			position: absolute;
+			position: relative;
 
 			z-index: 999;
-			width: 769px;
+			width: 320px;
 			/* background: black; */
 			margin: 0 auto;
 			display: block;
@@ -306,9 +312,8 @@
 			filter: blur(6px);
 		}
 
-		#ZCMZ-564325>iframe {
-			width: 100% !important;
-			top: 48px;
+		#contentArticle.on {
+			/* filter: blur(12px); */
 		}
 	</style>
 
@@ -320,14 +325,12 @@
   		vertical-align: middle;
 			right: 10px;
     position: absolute;
-		z-index: 999999;
 		}
 
 		a {
   display: inline-block;
   border-radius: 50%;
 }
-
 
 
 .left {
@@ -353,12 +356,8 @@
   transform: rotate(-135deg);
 }
 
-	.border-clickable {
-			border: 5px solid yellow;
-			color: yellow !important;
-		}
-
 	</style>
+
 
 
 </head>
@@ -396,14 +395,17 @@
 
 	<div class='z-main-wrapper'>
 
-		<section class="z-main" style="height: 1024px;">
-			<!-- <a id="zclose" class="close" href="#">
+		<section class="z-main" style="height: 520px;">
+			<a id="zclose" class="close" href="#">
 				<div class="box box2">
 					<svg viewbox="0 0 40 40">
 						<path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
 					</svg>
 				</div>
-			</a> -->
+			</a>
+
+
+
 			<a class="z-main__link">
 				<div id="ZCMZ-564325">
 					<script>
@@ -417,7 +419,7 @@
 								var s = ifr.contentWindow.document.createElement('script');
 								s.src = 'https://cdn.microsites.partnersite.mobi/corning/mzv2/cmz.js?cb=' + Date.now();
 								s.onload = function () {
-									ifr.contentWindow.zcmz_lbs('ZCMZ-564325', 'https://cdn.microsites.partnersite.mobi/xfinity/home-security-31.html#xfinity/home-security-31', 768, 1024, {
+									ifr.contentWindow.zcmz_lbs('ZCMZ-564325', 'https://cdn.microsites.partnersite.mobi/corning/gorilla-glass-v2.html#corning/gorilla-glass-v2', 320, 480, {
 										cta_hero: 'http://zumobi.go2cloud.org/aff_c?offer_id=149&aff_id=1001&url_id=943&aff_sub=%%TTD_SITE%%&aff_sub2=%%TTD_SUPPLYVENDOR%%&aff_sub3=%%TTD_ADGROUPID%%&aff_sub4=%%TTD_CREATIVEID%%',
 										cta_blog: 'http://zumobi.go2cloud.org/aff_c?offer_id=149&aff_id=1001&url_id=939&aff_sub=%%TTD_SITE%%&aff_sub2=%%TTD_SUPPLYVENDOR%%&aff_sub3=%%TTD_ADGROUPID%%&aff_sub4=%%TTD_CREATIVEID%%',
 										cta_blog_two: 'http://zumobi.go2cloud.org/aff_c?offer_id=149&aff_id=1001&url_id=949&aff_sub=%%TTD_SITE%%&aff_sub2=%%TTD_SUPPLYVENDOR%%&aff_sub3=%%TTD_ADGROUPID%%&aff_sub4=%%TTD_CREATIVEID%%',
@@ -441,14 +443,14 @@
 		<div class="bg-base color-body font-base">
 			<div class="hero-block inner-contain ratio-hero-image-container">
 				<img class="hero-image i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout"
-				 src="Forbes_detail_files/shopping.jpg" width="1280" height="600" tabindex="0" layout="responsive" alt="The Aston Martin DBS Superleggera"
+				 src="news_detail_files/car.jpg" width="1280" height="600" tabindex="0" layout="responsive" alt="The Aston Martin DBS Superleggera"
 				 role="button">
 			</div>
-			<div class="article-header border-clickable color-accent bg-base inner-contain ">
+			<div class="article-header border-clickable bg-base inner-contain ">
 				<div class="content-data color-body light-text"><a class="editors-pick" href="https://www.forbes.com/editors-picks/">EDITOR'S
 						PICK<span class="vert-pipe">|</span></a><span>17,139 views</span><span class="vert-pipe">|</span><span class="hidden"
 					 id="pageviews-0"></span><time>Sep 28, 2018,</time><span class="time"><time>6:00 am</time></span></div>
-				<h1 class="color-body font-base">The best shopping areas in Madrid</h1>
+				<h1 class="color-body font-base">2019 ForbesLife Luxury Car Guide: Game-Changing Sports Cars and SUVs</h1>
 				<div class="contrib-top-byline">
 					<div class="contrib-block">
 						<div class="contrib-primary"><a class="color-body contrib-link--name" href="https://www.forbes.com/sites/jimgorzelany/"
@@ -465,12 +467,11 @@
 					</div>
 					<div class="premium-hero-credit color-body light-text">Aston Martin</div>
 				</div>
-				<!-- <div class="line-light color-accent"></div> -->
+				<!-- <div class="line-light"></div> -->
 			</div>
 			<div class="article-body inner-contain fs-article font-body color-body">
-				<p><strong><em>Madrid is a very large city with a lot of leisure facilities. In addition to being able to do almost
-							everything, in Madrid you will surely find a lot of shopping areas. If you are learning Spanish in Madrid, take
-							advantage of your Spanish lessons to go for a walk in one of the best shops.</em></strong></p>
+				<p><strong><em>A guide to the best luxury sports cars and crossover&nbsp;SUVs for 2019, which take performance and
+							poshness&nbsp;to new levels. Plus: Harley goes electric.</em></strong></p>
 				<fbs-ad position="mobilerec" id="article-0-ad-0" style="display:none;" ad-id="inline-article-0-ad-0" progressive=""
 				 class="article-mobile-ad">
 					<div id="inline-article-0-ad-0" data-google-query-id="CI3d__KNkd4CFRfTWwodWHcAJw">
@@ -500,7 +501,7 @@
 					offer as many customizable extras as a driver can dream up. Here’s a look at the hottest luxury cars rolling out
 					for 2019.</p>
 				<figure class="image-embed embed-13 bleed">
-					<div><img src="./Forbes_detail_files/960x0.jpg" alt="Fast and Luxurious: The Bentley Continental GT goes from 0 to 60 mph in 3.6 seconds."
+					<div><img src="./news_detail_files/960x0.jpg" alt="Fast and Luxurious: The Bentley Continental GT goes from 0 to 60 mph in 3.6 seconds."
 						 data-height="1275" data-width="2720"></div>
 					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">Fast and Luxurious: The Bentley
 							Continental GT goes from 0 to 60 mph in 3.6 seconds.</span><span class="wp-credit-text light-text">Bentley
@@ -516,7 +517,7 @@
 				<p><strong>Vital Specs: </strong>6.0-liter 626 hp W12 engine, 8-speed automatic transmission. <strong>Price:
 					</strong>$214,600&nbsp;</p>
 				<figure class="image-embed embed-15 bleed">
-					<div><img src="./Forbes_detail_files/960x0(1).jpg" alt="Artful Dodger: The Volkswagen Arteon has a roomier interior than its predecessor and has optional all-wheel drive."
+					<div><img src="./news_detail_files/960x0(1).jpg" alt="Artful Dodger: The Volkswagen Arteon has a roomier interior than its predecessor and has optional all-wheel drive."
 						 data-height="1275" data-width="2720"></div>
 					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">Artful Dodger: The Volkswagen Arteon
 							has a roomier interior than its predecessor and has optional all-wheel drive.</span><span class="wp-credit-text light-text">Daniel
@@ -539,7 +540,7 @@
 					</div>
 				</fbs-ad>
 				<figure class="image-embed embed-16 bleed">
-					<div><img src="./Forbes_detail_files/960x0(2).jpg" alt="Eight Expectations: The BMW M850i xDrive coupe is powered by a 4.4-liter 523 hp twin-turbocharged V8 engine."
+					<div><img src="./news_detail_files/960x0(2).jpg" alt="Eight Expectations: The BMW M850i xDrive coupe is powered by a 4.4-liter 523 hp twin-turbocharged V8 engine."
 						 data-height="1275" data-width="2720"></div>
 					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">Eight Expectations: The BMW M850i
 							xDrive coupe is powered by a 4.4-liter 523 hp twin-turbocharged V8 engine.</span><span class="wp-credit-text light-text">BMW
@@ -556,7 +557,7 @@
 				<p><strong>Vital Specs: </strong>4.4-liter 523 hp twin-turbocharged V8 engine, 8-speed automatic transmission.<strong>
 						Price: </strong>$111,900</p>
 				<figure class="image-embed embed-14 bleed">
-					<div><img src="./Forbes_detail_files/960x0(3).jpg" alt="Inspirational and Aspirational: A lightweight carbon fiber body and twin-turbo V12 engine allow the Aston Martin DBS Superleggera to hit 62 mph in 3.4 seconds."
+					<div><img src="./news_detail_files/960x0(3).jpg" alt="Inspirational and Aspirational: A lightweight carbon fiber body and twin-turbo V12 engine allow the Aston Martin DBS Superleggera to hit 62 mph in 3.4 seconds."
 						 data-height="1275" data-width="2720"></div>
 					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">Inspirational and Aspirational: A
 							lightweight carbon fiber body and twin-turbo V12 engine allow the Aston Martin DBS Superleggera to hit 62 mph
@@ -577,7 +578,7 @@
 				<fbs-ad position="mobilex" id="article-0-ad-2" ad-id="inline-article-0-ad-2" progressive="" class="article-mobile-ad">
 					<div id="inline-article-0-ad-2" data-google-query-id="CKqWu_ONkd4CFU3FZAodJd8PhQ">
 						<div id="google_ads_iframe_/7175/fdcmobile/article-d-prem_2__container__" style="border: 0pt none; display: inline-block; width: 300px; height: 250px;"><iframe
-							 frameborder="0" src="./Forbes_detail_files/container(1).html" id="google_ads_iframe_/7175/fdcmobile/article-d-prem_2"
+							 frameborder="0" src="./news_detail_files/container(1).html" id="google_ads_iframe_/7175/fdcmobile/article-d-prem_2"
 							 title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="300" height="250"
 							 data-is-safeframe="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
 							 style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe></div>
@@ -585,7 +586,7 @@
 				</fbs-ad>
 				<p><br></p>
 				<figure class="image-embed embed-17 bleed">
-					<div><img src="./Forbes_detail_files/960x0(4).jpg" alt="Shock and Awe: The Jaguar iPace can go nearly 240 miles on a single charge."
+					<div><img src="./news_detail_files/960x0(4).jpg" alt="Shock and Awe: The Jaguar iPace can go nearly 240 miles on a single charge."
 						 data-height="1275" data-width="2720"></div>
 					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">Shock and Awe: The Jaguar iPace can
 							go
@@ -602,7 +603,7 @@
 					day.</p>
 				<p><strong>Vital Specs:</strong> Twin electric motors with 394 hp, 1-speed transmission. <strong>Price: </strong>$69,500</p>
 				<figure class="image-embed embed-18 bleed">
-					<div><img src="./Forbes_detail_files/960x0(5).jpg" alt="Ready for Takeoff: The Audi Q8 features a customizable virtual-cockpit instrument panel and a touchpad-controlled multimedia system."
+					<div><img src="./news_detail_files/960x0(5).jpg" alt="Ready for Takeoff: The Audi Q8 features a customizable virtual-cockpit instrument panel and a touchpad-controlled multimedia system."
 						 data-height="1275" data-width="2720"></div>
 					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">Ready for Takeoff: The Audi Q8
 							features a customizable virtual-cockpit instrument panel and a touchpad-controlled multimedia system.</span><span
@@ -617,7 +618,7 @@
 				<p><strong>Vital Specs: </strong>3.0-liter 335 hp supercharged V6 engine, 8-speed automatic transmission. <strong>Price:
 					</strong>$66,000 (estimated)</p>
 				<figure class="image-embed embed-32 bleed">
-					<div><img src="./Forbes_detail_files/1920x0.jpg" alt="Sexy Sedan: The top Mercedes-Benz AMG GT model can reach 60 mph in 3.1 seconds."
+					<div><img src="./news_detail_files/1920x0.jpg" alt="Sexy Sedan: The top Mercedes-Benz AMG GT model can reach 60 mph in 3.1 seconds."
 						 data-height="1275" data-width="2720"></div>
 					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">Sexy Sedan: The top Mercedes-Benz AMG
 							GT model can reach 60 mph in 3.1 seconds.</span><span class="wp-credit-text light-text">Mercedes-Benz</span></p>
@@ -632,7 +633,7 @@
 				<p><strong>Vital Specs: </strong>3.0-liter 429 hp inline-six-cylinder, or 4.0-liter 577 or 630 hp bi-turbocharged
 					V8 engine, 9-speed automatic transmission.<strong> Price:</strong> $120,000 (estimated)</p>
 				<figure class="image-embed embed-20 bleed">
-					<div><img src="./Forbes_detail_files/960x0(6).jpg" alt="Rolling with the Bulls: The Lamborghini Urus packs a 4.0-liter 650 hp twin-turbocharged V8 engine."
+					<div><img src="./news_detail_files/960x0(6).jpg" alt="Rolling with the Bulls: The Lamborghini Urus packs a 4.0-liter 650 hp twin-turbocharged V8 engine."
 						 data-height="1275" data-width="2720"></div>
 					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">Rolling with the Bulls: The
 							Lamborghini Urus packs a 4.0-liter 650 hp twin-turbocharged V8 engine.</span><span class="wp-credit-text light-text">Wolfango.it</span></p>
@@ -653,7 +654,7 @@
 				</fbs-ad>
 				<p><br></p>
 				<figure class="image-embed embed-21 bleed">
-					<div><img src="./Forbes_detail_files/960x0(7).jpg" alt="Hello, Caddy: The XT4&#39;s Driver Select Mode function allows a driver to fine-tune the car&#39;s dynamics."
+					<div><img src="./news_detail_files/960x0(7).jpg" alt="Hello, Caddy: The XT4&#39;s Driver Select Mode function allows a driver to fine-tune the car&#39;s dynamics."
 						 data-height="1275" data-width="2720"></div>
 					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">Hello, Caddy: The XT4's Driver Select
 							Mode function allows a driver to fine-tune the car's dynamics.</span><span class="wp-credit-text light-text">Cadillac</span></p>
@@ -670,7 +671,7 @@
 				<p><strong>Vital Specs: </strong>2.0-liter 237 hp turbocharged four-cylinder engine, 9-speed automatic
 					transmission. <strong>Price: </strong>$35,790</p>
 				<figure class="image-embed embed-22 bleed">
-					<div><img src="./Forbes_detail_files/960x0(8).jpg" alt="Coupe Dreams: The $295,000 Range Rover SV Coupe is highly customizable."
+					<div><img src="./news_detail_files/960x0(8).jpg" alt="Coupe Dreams: The $295,000 Range Rover SV Coupe is highly customizable."
 						 data-height="1275" data-width="2720"></div>
 					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">Coupe Dreams: The $295,000 Range
 							Rover
@@ -686,7 +687,7 @@
 				<p><strong>Vital Specs: </strong>5.0-liter 557 hp supercharged V8 engine, 8-speed automatic transmission. <strong>Price:</strong>
 					$295,000</p>
 				<figure class="image-embed embed-23 bleed">
-					<div><img src="./Forbes_detail_files/960x0(9).jpg" alt="High Roller: The Rolls-Royce Cullinan can be fitted with a number of bespoke touches, including a rear split-fold bench seat for added cargo stowage and a console with a mobile bar and refrigerator."
+					<div><img src="./news_detail_files/960x0(9).jpg" alt="High Roller: The Rolls-Royce Cullinan can be fitted with a number of bespoke touches, including a rear split-fold bench seat for added cargo stowage and a console with a mobile bar and refrigerator."
 						 data-height="1275" data-width="2720"></div>
 					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">High Roller: The Rolls-Royce Cullinan
 							can be fitted with a number of bespoke touches, including a rear split-fold bench seat for added cargo stowage
@@ -707,7 +708,7 @@
 				</fbs-ad>
 				<p><br></p>
 				<figure class="image-embed embed-24 bleed">
-					<div><img src="./Forbes_detail_files/960x0(10).jpg" alt="The Electric Hog: LiveWire is Harley-Davidson&#39;s first-ever electric motorcycle for 2019."
+					<div><img src="./news_detail_files/960x0(10).jpg" alt="The Electric Hog: LiveWire is Harley-Davidson&#39;s first-ever electric motorcycle for 2019."
 						 data-height="1275" data-width="2720"></div>
 					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">The Electric Hog: LiveWire is
 							Harley-Davidson's first-ever electric motorcycle for 2019.</span><span class="wp-credit-text light-text">Harley-Davidson</span></p>
@@ -723,7 +724,7 @@
 				<p><em>This story appears in the September 30, 2018 issue of Forbes.&nbsp;</em><a href="https://subs.forbesmagazine.com/pubs/B4/FRB/Magazine_Article_text_link.jsp?cds_page_id=189431&amp;cds_mag_code=FRB&amp;id=1535478852713&amp;lsid=82401254127026991&amp;vid=1"
 					 target="_blank" class="color-accent"><em>Subscribe</em></a></p>
 				<figure class="image-embed embed-30">
-					<div><img src="./Forbes_detail_files/960x0(11).jpg" alt="The Fall 2018 issue of ForbesLife" data-height="1969"
+					<div><img src="./news_detail_files/960x0(11).jpg" alt="The Fall 2018 issue of ForbesLife" data-height="1969"
 						 data-width="1500"></div>
 					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">The Fall 2018 issue of ForbesLife</span><span
 						 class="wp-credit-text light-text">Photograph by Jamel Toppin for Forbes</span></p>
@@ -1372,8 +1373,15 @@
 		// 	document.querySelector('.z-main-wrapper').classList.toggle("on");
 		// });
 
+
+		var backButton = document.querySelector('#backButton');
+		backButton.addEventListener('click', function (event) {
+			event.preventDefault();
+			event.stopPropagation();
+			window.open("./index.html", "_self")
+		});
+
 		var main = document.querySelector("#contentArticle");
-		//console.log(main);
 		main.addEventListener('click', function (event) {
 			event.preventDefault();
 			event.stopPropagation();
@@ -1382,24 +1390,13 @@
 
 			return false;
 		});
-		// var zclose = document.querySelector('#zclose');
-		// zclose.addEventListener('click', function (event) {
-		// 	//document.querySelector('.z-main-wrapper').classList.toggle("on");
-		// 	event.preventDefault();
-		// 	event.stopPropagation();
-		// 	window.open("./index.html", "_self")
-		// });
-
-
-		var backButton = document.querySelector('#backButton');
-		backButton.addEventListener('click', function (event) {
-			console.log("do it");
+		var zclose = document.querySelector('#zclose');
+		zclose.addEventListener('click', function (event) {
+			//document.querySelector('.z-main-wrapper').classList.toggle("on");
 			event.preventDefault();
 			event.stopPropagation();
-			window.open("./index.html", "_self")
+			window.open("./news_detail.iPad.html", "_self")
 		});
-
-		console.log(backButton);
 
 	</script>
 
