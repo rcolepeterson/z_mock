@@ -414,13 +414,10 @@
 							ifrs.padding = ifrs.margin = ifrs.borderWidth = '0';
 							ifr.onload = function () {
 								var s = ifr.contentWindow.document.createElement('script');
-								s.src = 'https://cdn.microsites.partnersite.mobi/corning/mzv2/cmz.js?cb=' + Date.now();
+								s.src = 'https://cdn-prototype.microsites.partnersite.mobi/hannaford/3-1/cmz.js?cb=' + Date.now();
 								s.onload = function () {
-									ifr.contentWindow.zcmz_lbs('ZCMZ-564325', 'http://cdn.microsites.partnersite.mobi/hannaford/hannaford.html#hannaford/hannaford', 768, 1024, {
-										cta_hero: 'http://zumobi.go2cloud.org/aff_c?offer_id=149&aff_id=1001&url_id=943&aff_sub=%%TTD_SITE%%&aff_sub2=%%TTD_SUPPLYVENDOR%%&aff_sub3=%%TTD_ADGROUPID%%&aff_sub4=%%TTD_CREATIVEID%%',
-										cta_blog: 'http://zumobi.go2cloud.org/aff_c?offer_id=149&aff_id=1001&url_id=939&aff_sub=%%TTD_SITE%%&aff_sub2=%%TTD_SUPPLYVENDOR%%&aff_sub3=%%TTD_ADGROUPID%%&aff_sub4=%%TTD_CREATIVEID%%',
-										cta_blog_two: 'http://zumobi.go2cloud.org/aff_c?offer_id=149&aff_id=1001&url_id=949&aff_sub=%%TTD_SITE%%&aff_sub2=%%TTD_SUPPLYVENDOR%%&aff_sub3=%%TTD_ADGROUPID%%&aff_sub4=%%TTD_CREATIVEID%%',
-										creativeData: '{"creative_id":"bp0k5aw0","ad_format":"%%TTD_ADFORMAT%%","supply_vendor":"%%TTD_SUPPLYVENDOR%%","partner_id":"%%TTD_PARTNERID%%","advertiser_id":"%%TTD_ADVERTISERID%%","ad_group_id":"%%TTD_ADGROUPID%%","campaign_id":"%%TTD_CAMPAIGNID%%","site":"%%TTD_SITE%%","device_type":"%%TTD_DEVICETYPE%%","device_id":"%%TTD_DEVICEID%%","zip_code":"%%TTD_ZIPCODE%%","lat":"%%TTD_LAT%%","long":"%%TTD_LONG%%"}'
+									ifr.contentWindow.zcmz_lbs('ZCMZ-564325', 'http://cdn-prototype.microsites.partnersite.mobi/hannaford/hannaford.html#hannaford/hannaford', 768, 1024, {
+
 									});
 								};
 								ifr.contentWindow.document.body.appendChild(s);
