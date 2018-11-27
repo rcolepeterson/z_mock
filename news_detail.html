@@ -29,7 +29,7 @@
 	</script>
 
 
-	<title>Game-Changing Sports Cars and SUVs</title>
+	<title>The News Outlet</title>
 	<meta name="referrer" content="no-referrer-when-downgrade">
 	<link rel="canonical" itemprop="url" href="https://www.forbes.com/sites/jimgorzelany/2018/09/28/2019-car-guide-game-changing-sedans-sports-cars-and-suvs/">
 	<link rel="amphtml" href="https://www.forbes.com/sites/jimgorzelany/2018/09/28/2019-car-guide-game-changing-sedans-sports-cars-and-suvs/amp/">
@@ -233,7 +233,7 @@
 		.z-main-wrapper {
 			position: fixed;
 			display: none;
-			z-index: 2;
+			z-index: 22;
 			top: 70px;
 			width: 100%;
 			opacity: 0;
@@ -241,7 +241,7 @@
 		}
 
 		.z-main-wrapper.on {
-			z-index: 2;
+			z-index: 22;
 			display: block;
 			opacity: 1
 		}
@@ -277,7 +277,7 @@
 			margin: 0 auto;
 			display: block;
 			display: block;
-			height: 40px;
+			height: 30px;
 			padding: 6px;
 			padding-left: 0;
 		}
@@ -308,12 +308,35 @@
 		/* end */
 
 		#contentArticle {
-			transition: all 1000ms;
+			//transition: all 1000ms;
 			/* filter: blur(6px); */
 		}
 
 		#contentArticle.on {
 			/* filter: blur(12px); */
+		}
+
+		.doBlur {
+			filter: blur(5px);
+		}
+	</style>
+
+	<style>
+		#darken {
+			z-index: 3;
+			height: 100%;
+			width: 100%;
+			position: fixed;
+			overflow: auto;
+			top: 0px;
+			left: 0px;
+			background: rgba(0, 0, 0, 0.7);
+			display: none;
+			/*can be anything, of course*/
+		}
+
+		#darken.on {
+			display: block;
 		}
 	</style>
 
@@ -321,41 +344,40 @@
 		/* back button */
 
 		#backButton {
-  		display: inline-block;
-  		vertical-align: middle;
+			display: inline-block;
+			vertical-align: middle;
 			right: 10px;
-    position: absolute;
+			position: absolute;
 		}
 
 		a {
-  display: inline-block;
-  border-radius: 50%;
-}
+			display: inline-block;
+			border-radius: 50%;
+		}
 
 
-.left {
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  border: 5px solid white;
-  border-radius: 50%;
-  /* margin-right: 1.5em; */
-}
+		.left {
+			display: inline-block;
+			width: 35px;
+			height: 35px;
+			border: 5px solid white;
+			border-radius: 50%;
+			/* margin-right: 1.5em; */
+		}
 
-.left:after {
-  content: '';
-	display: inline-block;
-  margin-top: 6px;
-  margin-left: 0.5em;
-  width: 12px;
-  height: 12px;
-  border-top: 4px solid #fff;
-  border-right: 4px solid #fff;
-  -moz-transform: rotate(-135deg);
-  -webkit-transform: rotate(-135deg);
-  transform: rotate(-135deg);
-}
-
+		.left:after {
+			content: '';
+			display: inline-block;
+			margin-top: 6px;
+			margin-left: 0.5em;
+			width: 12px;
+			height: 12px;
+			border-top: 4px solid #fff;
+			border-right: 4px solid #fff;
+			-moz-transform: rotate(-135deg);
+			-webkit-transform: rotate(-135deg);
+			transform: rotate(-135deg);
+		}
 	</style>
 
 
@@ -395,7 +417,7 @@
 
 	<div class='z-main-wrapper'>
 
-		<section class="z-main" style="height: 520px;">
+		<section class="z-main" style="height: 580px;">
 			<a id="zclose" class="close" href="#">
 				<div class="box box2">
 					<svg viewbox="0 0 40 40">
@@ -443,35 +465,35 @@
 		<div class="bg-base color-body font-base">
 			<div class="hero-block inner-contain ratio-hero-image-container">
 				<img class="hero-image i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined i-amphtml-layout"
-				 src="news_detail_files/car.jpg" width="1280" height="600" tabindex="0" layout="responsive" alt="The Aston Martin DBS Superleggera"
+				 src="./images/hero-article1.jpg" width="1280" height="600" tabindex="0" layout="responsive" alt="The Aston Martin DBS Superleggera"
 				 role="button">
 			</div>
 			<div class="article-header border-clickable bg-base inner-contain ">
-				<div class="content-data color-body light-text"><a class="editors-pick" href="https://www.forbes.com/editors-picks/">EDITOR'S
-						PICK<span class="vert-pipe">|</span></a><span>17,139 views</span><span class="vert-pipe">|</span><span class="hidden"
+				<div class="content-data color-body light-text"><a class="editors-pick" href="https://www.forbes.com/editors-picks/">Tristique
+						senectus<span class="vert-pipe">|</span></a><span>17,139 views</span><span class="vert-pipe">|</span><span class="hidden"
 					 id="pageviews-0"></span><time>Sep 28, 2018,</time><span class="time"><time>6:00 am</time></span></div>
-				<h1 class="color-body font-base">2019 ForbesLife Luxury Car Guide: Game-Changing Sports Cars and SUVs</h1>
+				<h1 class="color-body font-base">Lacus luctus accumsan tortor posuere ac ut consequat semper</h1>
 				<div class="contrib-top-byline">
 					<div class="contrib-block">
 						<div class="contrib-primary"><a class="color-body contrib-link--name" href="https://www.forbes.com/sites/jimgorzelany/"
 							 aria-label="Author Name" data-vars-event-label="contrib block byline" data-ga-track="contrib block byline"><strong
-								 class="contrib-name color-body">Jim Gorzelany</strong></a><span class="contrib-type color-body light-text">Contributor<svg
+								 class="contrib-name color-body">Massa Sed</strong></a><span class="contrib-type color-body light-text">Contributor<svg
 								 class="info" fill="#a1a1a1" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
 									<path d="M0 0h24v24H0z" fill="none"></path>
 									<path d="M11 17h2v-6h-2v6zm1-15C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zM11 9h2V7h-2v2z"></path>
-								</svg><span class="contrib-disclaimer">Opinions expressed by Forbes Contributors are their own.</span></span></div>
-						<div class="section-name header__color--merlot-burgundy"><a href="https://www.forbes.com/cars-bikes/">Cars &amp;
-								Bikes</a></div>
-						<div class="short-bio color-body light-text"><span>I write about how to maximize your automotive investment and
-								more.</span></div>
+								</svg><span class="contrib-disclaimer">Elementum nibh tellus molestie nunc non blandit massa enim nec.</span></span></div>
+						<div class="section-name header__color--merlot-burgundy"><a href="https://www.forbes.com/cars-bikes/">augue
+								mauris </a></div>
+						<div class="short-bio color-body light-text"><span>Ut venenatis tellus in metus vulputate eu. Sed libero enim sed
+								faucibus turpis in eu mi</span></div>
 					</div>
-					<div class="premium-hero-credit color-body light-text">Aston Martin</div>
+					<div class="premium-hero-credit color-body light-text">Luctus accumsan</div>
 				</div>
 				<!-- <div class="line-light"></div> -->
 			</div>
 			<div class="article-body inner-contain fs-article font-body color-body">
-				<p><strong><em>A guide to the best luxury sports cars and crossover&nbsp;SUVs for 2019, which take performance and
-							poshness&nbsp;to new levels. Plus: Harley goes electric.</em></strong></p>
+				<p><strong><em>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+							et dolore magna aliqua. Facilisis mauris sit amet massa vitae tortor. </em></strong></p>
 				<fbs-ad position="mobilerec" id="article-0-ad-0" style="display:none;" ad-id="inline-article-0-ad-0" progressive=""
 				 class="article-mobile-ad">
 					<div id="inline-article-0-ad-0" data-google-query-id="CI3d__KNkd4CFRfTWwodWHcAJw">
@@ -494,876 +516,56 @@
 						</div>
 					</div>
 				</fbs-ad>
-				<p>The old automotive categories are blurring with one another at turbocharged speeds. There are now sport-utility
-					vehicles that are as quick and stylish as many hot-blooded sports cars. Among passenger cars, there are coupes
-					that come with four doors instead of two to maintain a racy look with the practicality of a sedan. And most
-					models
-					offer as many customizable extras as a driver can dream up. Here’s a look at the hottest luxury cars rolling out
-					for 2019.</p>
+				<p>Felis eget velit aliquet sagittis id. Sed turpis tincidunt id aliquet risus feugiat in ante metus. Ullamcorper a
+					lacus vestibulum sed arcu non odio. Gravida neque convallis a cras semper auctor neque vitae. Libero id faucibus
+					nisl tincidunt eget nullam non. </p>
 				<figure class="image-embed embed-13 bleed">
-					<div><img src="./news_detail_files/960x0.jpg" alt="Fast and Luxurious: The Bentley Continental GT goes from 0 to 60 mph in 3.6 seconds."
+					<div><img src="./images/anna-dziubinska.jpg" alt="Fast and Luxurious: The Bentley Continental GT goes from 0 to 60 mph in 3.6 seconds."
 						 data-height="1275" data-width="2720"></div>
-					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">Fast and Luxurious: The Bentley
-							Continental GT goes from 0 to 60 mph in 3.6 seconds.</span><span class="wp-credit-text light-text">Bentley
-							Motors</span></p>
+					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">Amet facilisis magna etiam tempor orci
+							eu.</span><span class="wp-credit-text light-text">Massa tincidunt nunc pulvinar sapien</span></p>
 				</figure>
-				<p><a href="https://www.bentleymotors.com/en/models/new-continental/new-continental-gt.html" target="_blank" class="color-accent"><strong>Bentley
-							Continental GT</strong></a></p>
-				<p>Bentley’s sporty yet stately Continental GT coupe is redesigned for 2019 with added refinement nose to tail. It
-					packs a muscular W12 engine—essentially a pair of conjoined V6s—which gets this large and heavy car up to 60 mph
-					in a breathless 3.6 seconds. An electronically controlled suspension adjusts the ride and handling abilities
-					according to selectable modes. The four-seat coupe’s interior is immaculately upholstered in rich leather and
-					hand-trimmed in wood and piano-black finishes, and nearly limitless customization is available.&nbsp;</p>
-				<p><strong>Vital Specs: </strong>6.0-liter 626 hp W12 engine, 8-speed automatic transmission. <strong>Price:
+				<p><a href="https://www.bentleymotors.com/en/models/new-continental/new-continental-gt.html" target="_blank" class="color-accent"><strong>
+							Est ultricies integer quis auctor elit sed vulputate</strong></a></p>
+				<p>Ante in nibh mauris cursus mattis molestie. Est ultricies integer quis auctor elit sed vulputate. Tincidunt arcu
+					non sodales neque sodales ut etiam sit amet. Ut porttitor leo a diam sollicitudin. Felis eget nunc lobortis mattis
+					aliquam faucibus. Tellus in hac habitasse platea dictumst vestibulum. Justo eget magna fermentum iaculis eu non
+					diam phasellus. Est lorem ipsum dolor sit. Id ornare arcu odio ut.</p>
+				<p><strong>Massa sed: </strong>Ut lectus arcu bibendum at varius vel pharetra vel. <strong>Ultricies:
 					</strong>$214,600&nbsp;</p>
 				<figure class="image-embed embed-15 bleed">
-					<div><img src="./news_detail_files/960x0(1).jpg" alt="Artful Dodger: The Volkswagen Arteon has a roomier interior than its predecessor and has optional all-wheel drive."
+					<div><img src="./images/mike-scheid.jpg" alt="Artful Dodger: The Volkswagen Arteon has a roomier interior than its predecessor and has optional all-wheel drive."
 						 data-height="1275" data-width="2720"></div>
-					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">Artful Dodger: The Volkswagen Arteon
-							has a roomier interior than its predecessor and has optional all-wheel drive.</span><span class="wp-credit-text light-text">Daniel
-							Byrne</span></p>
+					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">Non tellus orci ac auctor augue mauris
+							augue neque. </span><span class="wp-credit-text light-text">Amet facilisis</span></p>
 				</figure>
-				<p><a href="http://www.vw.com/models/arteon.33195/section/masthead/" target="_blank" class="color-accent"><strong>Volkswagen
-							Arteon</strong></a></p>
-				<p>The stylish Volkswagen Arteon four-door coupe is new for 2019, and like the CC it replaces, this model strikes
-					a
-					racier profile than the typical sedan. A longer wheelbase and wider underpinnings contribute to a roomier
-					interior
-					than its predecessor had, and a turbocharged four-cylinder engine delivers strong acceleration, with
-					all-wheel-drive optional for added foul-weather security. Several safety features come standard, with items like
-					stop-and-go cruise control and a hands-free trunk release optional.&nbsp;</p>
-				<p><strong>Vital Specs: </strong>2.0-liter 268 hp turbocharged four-cylinder engine, 8-speed automatic
-					transmission. <strong>Price: </strong>$35,000 (estimated)</p>
-				<fbs-ad position="mobilex" id="article-0-ad-1" ad-id="inline-article-0-ad-1" progressive="" class="article-mobile-ad">
-					<div id="inline-article-0-ad-1" data-google-query-id="CKmL__KNkd4CFRXOWwodYV8CGA">
-						<div id="google_ads_iframe_/7175/fdcmobile/article-d-prem_1__container__" style="border: 0pt none; display: inline-block; width: 300px; height: 250px;"></div>
-					</div>
-				</fbs-ad>
-				<figure class="image-embed embed-16 bleed">
-					<div><img src="./news_detail_files/960x0(2).jpg" alt="Eight Expectations: The BMW M850i xDrive coupe is powered by a 4.4-liter 523 hp twin-turbocharged V8 engine."
-						 data-height="1275" data-width="2720"></div>
-					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">Eight Expectations: The BMW M850i
-							xDrive coupe is powered by a 4.4-liter 523 hp twin-turbocharged V8 engine.</span><span class="wp-credit-text light-text">BMW
-							AG / Daniel Kraus </span></p>
-				</figure>
-				<p><a href="https://www.bmwusa.com/vehicles/8-series/overview.html" target="_blank" class="color-accent"><strong>BMW
-							M850i xDrive Coupe</strong></a></p>
-				<p>After a 20-year absence, BMW brings back the 8 Series coupe for 2019. It’s aggressively styled with what BMW
-					calls “double bubble” contouring. Inside, sport seats are trimmed in premium Merino leather with contrast
-					stitching. The M850i’s twin-turbo V8 engine is good for a speedy sprint to 60 mph in 3.6 seconds. The “xDrive”
-					all-wheel drive comes standard, with performance-minded options, including -Active Roll Stabilization to help
-					keep
-					the car uncannily flat through the curves. And a self-parking system is among its many extras.&nbsp;</p>
-				<p><strong>Vital Specs: </strong>4.4-liter 523 hp twin-turbocharged V8 engine, 8-speed automatic transmission.<strong>
-						Price: </strong>$111,900</p>
-				<figure class="image-embed embed-14 bleed">
-					<div><img src="./news_detail_files/960x0(3).jpg" alt="Inspirational and Aspirational: A lightweight carbon fiber body and twin-turbo V12 engine allow the Aston Martin DBS Superleggera to hit 62 mph in 3.4 seconds."
-						 data-height="1275" data-width="2720"></div>
-					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">Inspirational and Aspirational: A
-							lightweight carbon fiber body and twin-turbo V12 engine allow the Aston Martin DBS Superleggera to hit 62 mph
-							in
-							3.4 seconds.</span><span class="wp-credit-text light-text">Dominic Fraser</span></p>
-				</figure>
-				<p><a href="https://global.astonmartin.com/en-us/models/dbs-superleggera" target="_blank" class="color-accent"><strong>Aston
-							Martin DBS Superleggera</strong></a></p>
-				<p>Aston Martin brings back two revered nameplates for what is arguably its most stunning coupe to date, the 2019
-					DBS Superleggera (pictured above). It’s wrapped in fluid bodywork that’s crafted from strong and lightweight
-					carbon fiber, with a richly trimmed “2+2” cabin. A twin-turbo V12 engine propels the DBS Superleggera to 62 mph
-					in
-					a bracing 3.4 seconds. Assorted high-tech performance-enhancing systems and massive 21-inch wheels and
-					performance
-					tires combine to deliver truly tenacious handling.&nbsp;</p>
-				<p><strong>Vital Specs: </strong>5.2-liter 715 hp twin-turbocharged V12 engine, 8-speed automatic transmission.<strong>
-						Price: </strong>$304,995</p>
-				<fbs-ad position="mobilex" id="article-0-ad-2" ad-id="inline-article-0-ad-2" progressive="" class="article-mobile-ad">
-					<div id="inline-article-0-ad-2" data-google-query-id="CKqWu_ONkd4CFU3FZAodJd8PhQ">
-						<div id="google_ads_iframe_/7175/fdcmobile/article-d-prem_2__container__" style="border: 0pt none; display: inline-block; width: 300px; height: 250px;"><iframe
-							 frameborder="0" src="./news_detail_files/container(1).html" id="google_ads_iframe_/7175/fdcmobile/article-d-prem_2"
-							 title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" width="300" height="250"
-							 data-is-safeframe="true" sandbox="allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation-by-user-activation"
-							 style="border: 0px; vertical-align: bottom;" data-load-complete="true"></iframe></div>
-					</div>
-				</fbs-ad>
+				<p><a href="http://www.vw.com/models/arteon.33195/section/masthead/" target="_blank" class="color-accent"><strong>Diam
+							quam nulla</strong></a></p>
+				<p>Amet justo donec enim diam vulputate ut pharetra sit amet. Feugiat in ante metus dictum at tempor commodo
+					ullamcorper. Ut eu sem integer vitae justo eget magna. Neque vitae tempus quam pellentesque nec nam aliquam sem.
+				</p>
+				<p><strong>Neque convallis: </strong>Pellentesque elit eget gravida cum sociis. <strong>Maecenas: </strong>$35,000
+					(estimated)</p>
+
+
+				<p><a href="https://www.bmwusa.com/vehicles/8-series/overview.html" target="_blank" class="color-accent"><strong>Fermentum
+							posuere urna nec tincidunt</strong></a></p>
+				<p>Lacus luctus accumsan tortor posuere ac ut consequat semper. Risus feugiat in ante metus. Ac turpis egestas sed
+					tempus urna et pharetra pharetra massa. A erat nam at lectus urna duis. Ut lectus arcu bibendum at varius vel
+					pharetra vel. Dui id ornare arcu odio ut sem. Quam lacus suspendisse faucibus interdum posuere lorem ipsum dolor
+					sit. Enim facilisis gravida neque convallis a cras semper. </p>
+				<p><strong>Faucibus interdum: </strong>4Felis eget nunc lobortis mattis aliquam faucibus. Tellus in hac habitasse
+					platea dictumst vestibulum. Justo eget magna fermentum iaculis eu non diam phasellus. <strong>
+						Ullamcorper : </strong>$111,900</p>
+
+
+
 				<p><br></p>
-				<figure class="image-embed embed-17 bleed">
-					<div><img src="./news_detail_files/960x0(4).jpg" alt="Shock and Awe: The Jaguar iPace can go nearly 240 miles on a single charge."
-						 data-height="1275" data-width="2720"></div>
-					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">Shock and Awe: The Jaguar iPace can
-							go
-							nearly 240 miles on a single charge.</span><span class="wp-credit-text light-text">Jaguar</span></p>
-				</figure>
-				<p><a href="https://www.jaguarusa.com/all-models/i-pace/index.html?abkid=407_339388&amp;gclid=EAIaIQobChMIn4ON8_ez3QIVioKzCh27cQYFEAAYAiAAEgJo1vD_BwE&amp;c"
-					 target="_blank" class="color-accent"><strong>Jaguar iPace</strong></a></p>
-				<p>The compact iPace is Jaguar’s first full-electric vehicle, and it’s a deft combination of a sports car and SUV.
-					Wrapped in coupe-like styling, it’s roomy enough to seat five. A lithium-ion battery pack can power the iPace for
-					nearly 240 miles, and it can reach 60 mph in 4.5 seconds. Artificial intelligence can learn a driver’s
-					preferences
-					and automatically adjust the climate control settings, seat position, and radio stations at different times of
-					the
-					day.</p>
-				<p><strong>Vital Specs:</strong> Twin electric motors with 394 hp, 1-speed transmission. <strong>Price: </strong>$69,500</p>
-				<figure class="image-embed embed-18 bleed">
-					<div><img src="./news_detail_files/960x0(5).jpg" alt="Ready for Takeoff: The Audi Q8 features a customizable virtual-cockpit instrument panel and a touchpad-controlled multimedia system."
-						 data-height="1275" data-width="2720"></div>
-					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">Ready for Takeoff: The Audi Q8
-							features a customizable virtual-cockpit instrument panel and a touchpad-controlled multimedia system.</span><span
-						 class="wp-credit-text light-text">Audi AG</span></p>
-				</figure>
-				<p><a href="https://www.audi.com/en/models/q8.html" target="_blank" class="color-accent"><strong>Audi Q8</strong></a></p>
-				<p>Audi bolsters its SUV lineup for 2019 with this new luxury flagship crossover. It’s wider and lower than the
-					current Q7, and introduces a new exterior styling to the brand. The interior looks and feels rich, and is
-					highlighted by Audi’s customizable virtual-cockpit instrument panel and a touchpad-controlled multimedia system.
-					All-wheel drive is standard and is rear-biased for a livelier feel. An optional air suspension with selectable
-					driving modes enables a higher ground clearance to enhance the off-road abilities.&nbsp;</p>
-				<p><strong>Vital Specs: </strong>3.0-liter 335 hp supercharged V6 engine, 8-speed automatic transmission. <strong>Price:
-					</strong>$66,000 (estimated)</p>
-				<figure class="image-embed embed-32 bleed">
-					<div><img src="./news_detail_files/1920x0.jpg" alt="Sexy Sedan: The top Mercedes-Benz AMG GT model can reach 60 mph in 3.1 seconds."
-						 data-height="1275" data-width="2720"></div>
-					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">Sexy Sedan: The top Mercedes-Benz AMG
-							GT model can reach 60 mph in 3.1 seconds.</span><span class="wp-credit-text light-text">Mercedes-Benz</span></p>
-				</figure>
-				<p><br></p>
-				<p><a href="https://www.mbusa.com/mercedes/future/model/model-2019_Mercedes_AMG_GT_4_Door_Coupe" target="_blank"
-					 class="color-accent"><strong>Mercedes-Benz AMG GT Four-Door Coupe</strong></a></p>
-				<p>Mercedes adds a four-door hardtop version of its rip-roaring GT Coupe/Roadster for 2019 to take on the Porsche
-					Panamera. The sports-car-like styling is accentuated by a choice of V8 engines with varying velocity. The top
-					model can reach 60 mph in a mere 3.1 seconds. Over-the-top luxury features borrowed from the S-Class include an
-					“Energizing Comfort” function designed to relax or refresh the driver according to predefined programs.</p>
-				<p><strong>Vital Specs: </strong>3.0-liter 429 hp inline-six-cylinder, or 4.0-liter 577 or 630 hp bi-turbocharged
-					V8 engine, 9-speed automatic transmission.<strong> Price:</strong> $120,000 (estimated)</p>
-				<figure class="image-embed embed-20 bleed">
-					<div><img src="./news_detail_files/960x0(6).jpg" alt="Rolling with the Bulls: The Lamborghini Urus packs a 4.0-liter 650 hp twin-turbocharged V8 engine."
-						 data-height="1275" data-width="2720"></div>
-					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">Rolling with the Bulls: The
-							Lamborghini Urus packs a 4.0-liter 650 hp twin-turbocharged V8 engine.</span><span class="wp-credit-text light-text">Wolfango.it</span></p>
-				</figure>
-				<p><a href="https://www.lamborghini.com/en-en/models/urus" target="_blank" class="color-accent"><strong>Lamborghini
-							Urus</strong></a></p>
-				<p>The stunningly svelte Urus crossover SUV debuts for 2019 and stands as the only Lamborghini that can be used as
-					a daily driver without sacrifice. As is Lambo’s custom, the name is related to bulls, in this case a wild
-					ancestor
-					of domestic cattle. A 4.0-liter twin-turbo V8 enables a 3.5-second sprint to 60 mph. All-wheel drive, active
-					torque vectoring, four-wheel steering, an adaptive air suspension, active roll stabilization and carbon-ceramic
-					brakes combine to deliver pulse-pounding performance. And its aircraft-like cockpit is open to tremendous
-					customization.</p>
-				<p><strong>Vital Specs: </strong>4.0-liter 650 hp twin-turbocharged V8 engine, 8-speed automatic transmission.
-					<strong>Price:</strong> $200,000&nbsp;</p>
-				<fbs-ad position="mobilex" id="article-0-ad-3" ad-id="inline-article-0-ad-3" progressive="" class="article-mobile-ad">
-					<div id="inline-article-0-ad-3"></div>
-				</fbs-ad>
-				<p><br></p>
-				<figure class="image-embed embed-21 bleed">
-					<div><img src="./news_detail_files/960x0(7).jpg" alt="Hello, Caddy: The XT4&#39;s Driver Select Mode function allows a driver to fine-tune the car&#39;s dynamics."
-						 data-height="1275" data-width="2720"></div>
-					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">Hello, Caddy: The XT4's Driver Select
-							Mode function allows a driver to fine-tune the car's dynamics.</span><span class="wp-credit-text light-text">Cadillac</span></p>
-				</figure>
-				<p><a href="https://www.cadillac.com/crossovers-suvs/xt4-crossover" target="_blank" class="color-accent"><strong>Cadillac
-							XT4</strong></a></p>
-				<p>Cadillac finally fills an important hole in its lineup with the XT4 compact crossover for 2019. It’s
-					appealingly
-					executed, with a plush and purposeful five-passenger interior. It packs a lively turbocharged four-cylinder
-					engine
-					and comes with a Driver Select Mode function, which allows a driver to fine-tune the XT4’s dynamics. An available
-					Active Sport Suspension adjusts in real time to maximize ride and handling characteristics over changing road
-					conditions.&nbsp;</p>
-				<p><strong>Vital Specs: </strong>2.0-liter 237 hp turbocharged four-cylinder engine, 9-speed automatic
-					transmission. <strong>Price: </strong>$35,790</p>
-				<figure class="image-embed embed-22 bleed">
-					<div><img src="./news_detail_files/960x0(8).jpg" alt="Coupe Dreams: The $295,000 Range Rover SV Coupe is highly customizable."
-						 data-height="1275" data-width="2720"></div>
-					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">Coupe Dreams: The $295,000 Range
-							Rover
-							SV Coupe is highly customizable.</span><span class="wp-credit-text light-text">Land Rover</span></p>
-				</figure>
-				<p><a href="https://www.landroverusa.com/range-rover-sv-coupe/index.html" target="_blank" class="color-accent"><strong>Land
-							Rover Range Rover SV Coupe</strong></a></p>
-				<p>Land Rover enters the ultra-SUV market for 2019 with this limited- production (999 units) two-door Range Rover.
-					Hand-built, it drips of exclusivity and strikes a stunning profile. Buyers can choose from scores of paint hues,
-					door-handle and tread-plate engraving, semiprecious-metal badging and myriad bespoke treatments. A slightly lower
-					ride height and other performance improvements afford crisper handling while maintaining an amenable around-town
-					ride and off-road dexterity.</p>
-				<p><strong>Vital Specs: </strong>5.0-liter 557 hp supercharged V8 engine, 8-speed automatic transmission. <strong>Price:</strong>
-					$295,000</p>
-				<figure class="image-embed embed-23 bleed">
-					<div><img src="./news_detail_files/960x0(9).jpg" alt="High Roller: The Rolls-Royce Cullinan can be fitted with a number of bespoke touches, including a rear split-fold bench seat for added cargo stowage and a console with a mobile bar and refrigerator."
-						 data-height="1275" data-width="2720"></div>
-					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">High Roller: The Rolls-Royce Cullinan
-							can be fitted with a number of bespoke touches, including a rear split-fold bench seat for added cargo stowage
-							and a console with a mobile bar and refrigerator.</span><span class="wp-credit-text light-text">Rolls-Royce</span></p>
-				</figure>
-				<p><a href="https://www.rolls-roycemotorcars.com/en-US/explore-cullinan.html" target="_blank" class="color-accent"><strong>Rolls-Royce
-							Cullinan</strong></a></p>
-				<p>Rolls-Royce debuts its first-ever SUV for 2019, the Cullinan. It’s named after the largest diamond ever
-					discovered and is appropriately formal-looking. It’s plenty posh and plush inside, and can be dressed up with an
-					almost unending number of bespoke touches. For those who choose to drive, the Cullinan can be fitted with a rear
-					split-fold bench seat for added cargo stowage. Those who prefer to be driven can specify rear multifunction
-					buckets and a console with a mobile bar and refrigerator. The Cullinan is also engineered to tackle off-road
-					trails without sacrificing the brand’s traditional “magic-carpet ride.”&nbsp;</p>
-				<p><strong>Vital Specs:</strong> 6.75-liter 563 hp twin-turbocharged V12 engine, 8-speed automatic transmission.<strong>
-						Price:</strong> $325,000</p>
-				<fbs-ad position="mobilex" id="article-0-ad-4" ad-id="inline-article-0-ad-4" progressive="" class="article-mobile-ad">
-					<div id="inline-article-0-ad-4"></div>
-				</fbs-ad>
-				<p><br></p>
-				<figure class="image-embed embed-24 bleed">
-					<div><img src="./news_detail_files/960x0(10).jpg" alt="The Electric Hog: LiveWire is Harley-Davidson&#39;s first-ever electric motorcycle for 2019."
-						 data-height="1275" data-width="2720"></div>
-					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">The Electric Hog: LiveWire is
-							Harley-Davidson's first-ever electric motorcycle for 2019.</span><span class="wp-credit-text light-text">Harley-Davidson</span></p>
-				</figure>
-				<p><a href="https://www.harley-davidson.com/us/en/motorcycles/future-vehicles/livewire.html" target="_blank" class="color-accent"><strong>Harley-Davidson
-							LiveWire</strong></a></p>
-				<p>A truly iconic American brand, Harley-Davidson introduces its first-ever electric motorcycle for 2019, the big
-					and bold LiveWire. As is the case with electric cars, battery-powered bikes are inherently quick off the line,
-					since an electric motor delivers 100% of its torque immediately. There are no gears to shift or clutch to work,
-					so
-					the power gets to the pavement even quicker—it’s expected to go from 0 to 60 mph in around four seconds.</p>
-				<p><strong>Vital Specs:</strong> Electric motor, 1-speed transmission. <strong>Price:</strong> $30,000 (estimated)</p>
-				<p><em>This story appears in the September 30, 2018 issue of Forbes.&nbsp;</em><a href="https://subs.forbesmagazine.com/pubs/B4/FRB/Magazine_Article_text_link.jsp?cds_page_id=189431&amp;cds_mag_code=FRB&amp;id=1535478852713&amp;lsid=82401254127026991&amp;vid=1"
-					 target="_blank" class="color-accent"><em>Subscribe</em></a></p>
-				<figure class="image-embed embed-30">
-					<div><img src="./news_detail_files/960x0(11).jpg" alt="The Fall 2018 issue of ForbesLife" data-height="1969"
-						 data-width="1500"></div>
-					<p class="wp-caption-text light-text"><span class="wp-caption-text-caption">The Fall 2018 issue of ForbesLife</span><span
-						 class="wp-credit-text light-text">Photograph by Jamel Toppin for Forbes</span></p>
-				</figure>
-				<p><br></p>
-				<div class="contrib-bottom-byline">
-					<div class="line-dark color-body"></div>
-					<div class="contrib">
-						<div class="contrib-byline color-body"><a class="color-body gravatar-link" href="https://www.forbes.com/sites/jimgorzelany/"
-							 aria-label="Author Avatar" data-vars-event-label="gravatar link" data-ga-track="gravatar link">
-								<amp-img src="https://secure.gravatar.com/avatar/bc7cb1931e0423fb427ab4c14b284b43?s=62&amp;d=mm&amp;r=g" height="64px"
-								 width="64px" class="i-amphtml-element i-amphtml-layout-fixed i-amphtml-layout-size-defined" style="width: 64px; height: 64px;"></amp-img>
-							</a>
-							<div class="contrib-info"><a class="color-body contrib-link--name" href="https://www.forbes.com/sites/jimgorzelany/"
-								 aria-label="Author Name" data-vars-event-label="contrib block byline" data-ga-track="contrib block byline"><strong
-									 class="contrib-name">Jim Gorzelany</strong></a><span class="contrib-type color-body light-text">Contributor</span></div>
-						</div>
-						<div class="contrib-bio">
-							<amp-accordion class="i-amphtml-element i-amphtml-layout-container">
-								<section>
-									<header class="i-amphtml-accordion-header" role="button" aria-controls="2_AMP_content_0" aria-expanded="false"
-									 tabindex="0">
-										<div class="read-more"><span class="text">I’m a veteran Chicago-based consumer automotive journalist devoted
-												to providing news, views, timely tips and reviews to help maximize your automotive investments. In…</span><span
-											 class="toggle toggle--more" data-vars-event-label="contrib block expand" data-ga-track="contrib block expand">Read
-												More</span></div>
-										<div class="read-less"><span class="text">I’m a veteran Chicago-based consumer automotive journalist devoted
-												to providing news, views, timely tips and reviews to help maximize your automotive investments. In
-												addition
-												to posting on Forbes.com, I'm a contributor for Motor1.com on consumer car-buying issues, a Contributing
-												Editor for Consumers Digest magazine and write frequently on automotive topics for other national and
-												regional publications and websites. My work also appears in newspapers across the U.S., syndicated by CTW
-												Features.</span><span class="toggle toggle--less" data-vars-event-label="contrib block reduce"
-											 data-ga-track="contrib block reduce">Read Less</span></div>
-									</header>
-									<div class="content i-amphtml-accordion-content" id="2_AMP_content_0"></div>
-								</section>
-							</amp-accordion>
-						</div>
-					</div>
-					<div class="line-dark color-body"></div>
-				</div>
+
 			</div>
-		</div>
 	</article>
+	<div id="darken"></div>
 
-	<div class="spinner-html"></div>
-	<div class="footer article-footer footer--mobile">
-		<div class="logo-footer"><a class="forbes-logo" href="https://www.forbes.com/" aria-label="Forbes Logo"><svg class="forbes-logo"
-				 xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-139 51 80 20"
-				 xml:space="preserve">
-					<path class="st0" d="M-90.5,56.7c-1.3,0-2.3,0.3-3.3,0.9c0-3,0-5.6,0.1-6.6l-6.1,1.2v0.6l0.6,0.1c0.9,0.1,1.2,0.6,1.3,1.8   c0.2,2.2,0.2,13.9,0,15.8c1.6,0.4,3.4,0.7,5.2,0.7c4.9,0,7.8-3,7.8-7.7C-85,59.4-87.3,56.7-90.5,56.7z M-92.6,70   c-0.3,0-0.8-0.1-1-0.1c-0.1-1.3-0.2-6.7-0.1-11.5c0.6-0.2,0.9-0.2,1.4-0.2c2,0,3.1,2.3,3.1,5.2C-89.3,67.2-90.7,70-92.6,70z    M-122.8,56.8l-1,0.3c-0.8-2.8-2.2-4.4-4.6-4.4h-3.2c-0.1,1.8-0.2,4.7-0.2,7.8l2.1-0.1c1.4,0,2-1.1,2.4-2.7h0.8v6.5h-0.8   c-0.3-1.6-0.9-2.6-2.4-2.7l-2.1-0.1c0,2.3,0.1,4.3,0.2,5.5c0.1,1.7,0.6,2.5,1.8,2.7l1.1,0.1v0.8H-139v-0.8l0.9-0.1   c1.2-0.2,1.7-0.9,1.8-2.7c0.2-2.9,0.3-8.8,0-12.1c-0.1-1.7-0.6-2.5-1.8-2.7l-0.9-0.1v-0.8h16.1L-122.8,56.8z M-117.7,56.5   c4.6,0,6.8,3.1,6.8,7.2c0,4-2.6,7.3-7.1,7.3s-6.8-3.1-6.8-7.2C-124.8,59.8-122.3,56.5-117.7,56.5z M-117.9,57.4   c-2,0-2.6,2.7-2.6,6.3c0,3.5,0.9,6.3,2.8,6.3c2,0,2.6-2.7,2.6-6.3C-115.2,60.3-116.1,57.4-117.9,57.4z M-83.9,63.9   c0-3.8,2.4-7.3,7.1-7.3c3.8,0,5.7,2.8,5.7,6.6h-8.6c-0.1,3.4,1.6,5.9,4.9,5.9c1.4,0,2.2-0.4,3.1-1l0.4,0.5c-0.9,1.3-2.9,2.6-5.6,2.6   C-80.9,71-83.8,68.1-83.9,63.9z M-79.6,62.2l4.3-0.1c0-1.9-0.3-4.6-1.8-4.6C-78.7,57.5-79.6,60-79.6,62.2z M-60.1,60.8l-0.7,0.2   c-0.7-2.4-1.9-3.4-3.5-3.4c-1.1,0-1.9,0.8-1.9,2c0,1.2,0.9,1.8,3.5,2.8c2.4,0.9,3.3,2,3.3,3.9c0,2.9-2.2,4.7-5.9,4.7   c-1.7,0-3.7-0.4-4.8-0.8l-0.1-4l0.7-0.2c1,2.8,2.3,3.8,4,3.8c1.5,0,2.3-1,2.3-2.2c0-1.1-0.6-1.7-2.9-2.6c-2.2-0.8-3.7-1.7-3.7-4.2   c0-2.4,2.1-4.4,5.5-4.4c1.6,0,3.1,0.3,4.1,0.7L-60.1,60.8z M-100.4,60.7c-1.8-1.2-3.8-0.7-4.3,0c-0.1,2.2-0.1,5.7,0,7.4   c0.1,1.1,0.4,1.6,1.3,1.8l1.1,0.1v0.8h-8.5v-0.8l0.6-0.1c0.9-0.1,1.2-0.6,1.3-1.8c0.2-1.9,0.2-5.8,0-8c-0.1-1.1-0.4-1.6-1.3-1.8   l-0.6-0.1v-0.6l6.1-1.2l-0.1,3.2c1.4-3.3,4.2-3.7,5.8-2.8L-100.4,60.7z"></path>
-				</svg></a></div><small class="copy">© 2018 Forbes Media LLC. All Rights Reserved.</small>
-		<ul class="footer-links">
-			<li class="mobile"><a href="https://preferences-mgr.truste.com/?pid=forbes01&amp;amp;aid=forbes_mobile01" aria-label="AdChoices">AdChoices</a></li>
-			<li><a href="https://www.forbes.com/fdc/privacy.html" aria-label="Privacy Statement">Privacy Statement</a></li>
-			<li><a href="https://www.forbes.com/terms" aria-label="Terms and Conditions">Terms and Conditions</a></li>
-			<li><a href="https://www.forbes.com/fdc/contact.html" aria-label="Contact Us">Contact Us</a></li>
-			<li><a href="https://www.forbes.com/careers-at-forbes/" aria-label="Jobs At Forbes">Jobs At Forbes</a></li>
-			<li><a href="https://forbesreprints.magreprints.com/" aria-label="Reprints &amp; Permissions">Reprints &amp;
-					Permissions</a></li>
-			<li><a href="https://www.forbes.com/sites/forbespr/" aria-label="Forbes Press Room">Forbes Press Room</a></li>
-			<li><a href="http://www.forbesmedia.com/" aria-label="Advertise">Advertise</a></li>
-		</ul>
-	</div>
-	<amp-lightbox id="share-lightbox" layout="nodisplay" class="i-amphtml-element i-amphtml-layout-nodisplay i-amphtml-overlay"
-	 hidden="">
-		<div class="share-lightbox">
-			<div class="share-lightbox-content">
-				<div class="close-button-wrapper" aria-label="Close Share Modal" on="tap:share-lightbox.close" role="button"
-				 tabindex="0"><svg class="close-button" id="close" fill="#FFFFFF" version="1.1" xmlns="http://www.w3.org/2000/svg"
-					 xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" xml:space="preserve">
-						<path d="M448,402.745L301.255,256L448,109.255L402.745,64L256,210.745L109.255,64L64,109.255L210.745,256L64,402.745L109.255,448L256,301.255L402.745,448L448,402.745z"></path>
-					</svg></div>
-				<div class="share-text">Share</div>
-				<div class="social-wrapper">
-					<div class="social-share"><a class="social-link social-link--email" href="mailto:?subject=2019%20ForbesLife%20Luxury%20Car%20Guide:%20Game-Changing%20Sports%20Cars%20and%20SUVs%20-%20Forbes&amp;body=Hi,%0A%0AI%20thought%20you%27d%20like%20this%3A%0Ahttps://www.forbes.com/sites/jimgorzelany/2018/09/28/2019-car-guide-game-changing-sedans-sports-cars-and-suvs/%0A%0A2019%20ForbesLife%20Luxury%20Car%20Guide:%20Game-Changing%20Sports%20Cars%20and%20SUVs%20-%20Forbes"
-						 data-vars-event-label="Email Click" data-ga-track="Email Click"></a><a class="social-link-label social-link-label--email"
-						 href="mailto:?subject=2019%20ForbesLife%20Luxury%20Car%20Guide%3A%20Game-Changing%20Sports%20Cars%20and%20SUVs%20-%20Forbes&amp;body=%0AHi%2C%0A%0AI%20thought%20you%27d%20like%20this%3A%0Ahttp%3A%2F%2Fwww.forbes.com%2Fsites%2Fjimgorzelany%2F2018%2F09%2F28%2F2019-car-guide-game-changing-sedans-sports-cars-and-suvs%2F%0A%0A2019%20ForbesLife%20Luxury%20Car%20Guide%3A%20Game-Changing%20Sports%20Cars%20and%20SUVs%20-%20Forbes%0A"
-						 data-vars-event-label="Email Click" data-ga-track="Email Click" target="_top">EMAIL</a></div>
-					<div class="social-share">
-						<amp-social-share class="social-link social-link--facebook i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined amp-social-share-facebook"
-						 type="facebook" width="60" height="44" layout="responsive" data-param-app_id="123694841080850"
-						 data-vars-event-label="Facebook Click" data-ga-track="Facebook Click" role="button" tabindex="0">
-							<i-amphtml-sizer style="padding-top: 73.3333%;"></i-amphtml-sizer>
-						</amp-social-share><a class="social-link-label" href="https://www.facebook.com/sharer.php?u=http%3A%2F%2Fwww.forbes.com%2Fsites%2Fjimgorzelany%2F2018%2F09%2F28%2F2019-car-guide-game-changing-sedans-sports-cars-and-suvs%2F"
-						 data-vars-event-label="Facebook Click" data-ga-track="Facebook Click" target="_blank">FACEBOOK</a>
-					</div>
-					<div class="social-share">
-						<amp-social-share class="social-link social-link--twitter i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined amp-social-share-twitter"
-						 type="twitter" width="60" height="44" data-param-text="2019 ForbesLife Luxury Car Guide: Game-Changing Sports Cars and SUVs via @forbes"
-						 layout="responsive" data-vars-event-label="Twitter Click" data-ga-track="Twitter Click" role="button" tabindex="0">
-							<i-amphtml-sizer style="padding-top: 73.3333%;"></i-amphtml-sizer>
-						</amp-social-share><a class="social-link-label" href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fwww.forbes.com%2Fsites%2Fjimgorzelany%2F2018%2F09%2F28%2F2019-car-guide-game-changing-sedans-sports-cars-and-suvs%2F&amp;text=2019%20ForbesLife%20Luxury%20Car%20Guide%3A%20Game-Changing%20Sports%20Cars%20and%20SUVs%20via%20%40forbes"
-						 data-vars-event-label="Twitter Click" data-ga-track="Twitter Click" target="_blank">TWITTER</a>
-					</div>
-					<div class="social-share">
-						<amp-social-share class="social-link social-link--linkedin i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined amp-social-share-linkedin"
-						 type="linkedin" width="60" height="44" layout="responsive" data-vars-event-label="Linkedin Click" data-ga-track="Linkedin Click"
-						 role="button" tabindex="0">
-							<i-amphtml-sizer style="padding-top: 73.3333%;"></i-amphtml-sizer>
-						</amp-social-share><a class="social-link-label" href="https://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fwww.forbes.com%2Fsites%2Fjimgorzelany%2F2018%2F09%2F28%2F2019-car-guide-game-changing-sedans-sports-cars-and-suvs%2F&amp;title=2019%20ForbesLife%20Luxury%20Car%20Guide%3A%20Game-Changing%20Sports%20Cars%20and%20SUVs&amp;summary=A%20guide%20to%20the%20best%20luxury%20sports%20cars%20and%20crossover%20SUVs%20for%202019%2C%20which%20take%20performance%20and%20poshness%20to%20new%20levels.%20Plus%3A%20Harley%20goes%20electric."
-						 data-vars-event-label="Linkedin Click" data-ga-track="Linkedin Click" target="_blank">LINKEDIN</a>
-					</div>
-					<div class="social-share">
-						<amp-social-share class="social-link social-link--gplus i-amphtml-element i-amphtml-layout-responsive i-amphtml-layout-size-defined amp-social-share-gplus"
-						 type="gplus" width="60" height="44" layout="responsive" data-vars-event-label="Google Plus Click" data-ga-track="Google Plus Click"
-						 role="button" tabindex="0">
-							<i-amphtml-sizer style="padding-top: 73.3333%;"></i-amphtml-sizer>
-						</amp-social-share><a class="social-link-label" href="https://plus.google.com/share?url=http%3A%2F%2Fwww.forbes.com%2Fsites%2Fjimgorzelany%2F2018%2F09%2F28%2F2019-car-guide-game-changing-sedans-sports-cars-and-suvs%2F"
-						 data-vars-event-label="Google Plus Click" data-ga-track="Google Plus Click" target="_blank">GOOGLE+</a>
-					</div>
-				</div>
-			</div>
-		</div>
-	</amp-lightbox>
-	<amp-install-serviceworker src="https://www.forbes.com/service-worker.js" data-iframe-src="https://www.forbes.com/service-worker.html"
-	 layout="nodisplay" class="i-amphtml-element i-amphtml-layout-nodisplay" hidden=""></amp-install-serviceworker>
-	<fbs-ad class="ntv-contentm" position="ntv-contentm" style="">
-		<div id="ntv-contentm" data-google-query-id="CLGV3_KNkd4CFQGdZAodI_8D3Q">
-			<div id="google_ads_iframe_/7175/fdcmobile/article-d-prem_6__container__" style="border: 0pt none;"><iframe id="google_ads_iframe_/7175/fdcmobile/article-d-prem_6"
-				 title="3rd party ad content" name="google_ads_iframe_/7175/fdcmobile/article-d-prem_6" width="1" height="1"
-				 scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border: 0px; vertical-align: bottom; display: none;"
-				 data-load-complete="true" src=""></iframe>
-				<div class="str-adunit-1x1 str-card-exp str-clickout str-editorial- str-insights-true str-no-share-labels" style="width: 100px; margin-top: 12px; cursor: pointer;"
-				 data-advertiser="Insights - Nuveen" data-str-native-key="6kez5JUH4RdqUg4xdkwSNADy" data-str-campaign-key="DSj79Y7fQsGpBpji3x4rw27vKe"
-				 data-str-rendered="1539904127218" data-str-visited-flag="true"> <a data-href="https://www.forbes.com/sites/insights-nuveen/2018/09/18/closed-end-fund-investors-savvy-prosperous-and-young/"
-					 class="link str-title" style="font-size:8px;display: block;line-height: 1em;color: #F4F4F4;">Closed-End Fund
-						Investors: Savvy, Prosperous and Young</a>
-
-				</div>
-			</div>
-		</div>
-	</fbs-ad>
-	<div class="header__dropdown header__dropdown--closed" [class]="headerState.isHeaderOpen ? &#39;header__dropdown header__dropdown--open&#39; : &#39;header__dropdown header__dropdown--closed&#39;"
-	 i-amphtml-fixedid="F3" style="">
-		<amp-accordion id="header-accordion" disable-session-states="" expand-single-section="" class="i-amphtml-element i-amphtml-layout-container">
-			<section class="header__channel">
-				<h4 class="header__title i-amphtml-accordion-header" data-vars-event-label="U18 - Channel: Billionaires - Position 1 - Channel Expanded"
-				 data-ga-track="U18 - Channel: Billionaires - Position 1 - Channel Expanded" role="button" aria-controls="header-accordion_AMP_content_0"
-				 aria-expanded="false" tabindex="0"><span class="header__color--centennial-silver">Billionaires</span></h4>
-				<ul class="header__sections header__color--centennial-silver i-amphtml-accordion-content" id="header-accordion_AMP_content_0">
-					<li class="header__section header__section--all"><a href="https://www.forbes.com/worlds-billionaires/"
-						 data-vars-event-label="U18 - Channel: Billionaires - Position 1" data-ga-track="U18 - Channel: Billionaires - Position 1">All
-							Billionaires</a><svg class="dropdown-arrow" fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-							<path d="M0 0h24v24H0z" fill="none"></path>
-							<path d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"></path>
-						</svg></li>
-					<li class="header__section"><a href="https://www.forbes.com/billionaires/" data-vars-event-label="U18 - Channel: Billionaires - Position 1 - Section: World&#39;s Billionaires"
-						 data-ga-track="U18 - Channel: Billionaires - Position 1 - Section: World&#39;s Billionaires">World's
-							Billionaires</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/forbes-400/" data-vars-event-label="U18 - Channel: Billionaires - Position 1 - Section: Forbes 400"
-						 data-ga-track="U18 - Channel: Billionaires - Position 1 - Section: Forbes 400">Forbes 400</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/self-made-women/" data-vars-event-label="U18 - Channel: Billionaires - Position 1 - Section: America&#39;s Richest Self-Made Women"
-						 data-ga-track="U18 - Channel: Billionaires - Position 1 - Section: America&#39;s Richest Self-Made Women">America's
-							Richest Self-Made Women</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/china-billionaires/" data-vars-event-label="U18 - Channel: Billionaires - Position 1 - Section: China&#39;s Richest"
-						 data-ga-track="U18 - Channel: Billionaires - Position 1 - Section: China&#39;s Richest">China's Richest</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/india-billionaires/" data-vars-event-label="U18 - Channel: Billionaires - Position 1 - Section: India&#39;s Richest"
-						 data-ga-track="U18 - Channel: Billionaires - Position 1 - Section: India&#39;s Richest">India's Richest</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/indonesia-billionaires/" data-vars-event-label="U18 - Channel: Billionaires - Position 1 - Section: Indonesia&#39;s Richest"
-						 data-ga-track="U18 - Channel: Billionaires - Position 1 - Section: Indonesia&#39;s Richest">Indonesia's Richest</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/korea-billionaires/list/" data-vars-event-label="U18 - Channel: Billionaires - Position 1 - Section: Korea&#39;s Richest"
-						 data-ga-track="U18 - Channel: Billionaires - Position 1 - Section: Korea&#39;s Richest">Korea's Richest</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/thailand-billionaires/list/" data-vars-event-label="U18 - Channel: Billionaires - Position 1 - Section: Thailand&#39;s Richest"
-						 data-ga-track="U18 - Channel: Billionaires - Position 1 - Section: Thailand&#39;s Richest">Thailand's Richest</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/japan-billionaires/list/" data-vars-event-label="U18 - Channel: Billionaires - Position 1 - Section: Japan&#39;s Richest"
-						 data-ga-track="U18 - Channel: Billionaires - Position 1 - Section: Japan&#39;s Richest">Japan's Richest</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/australia-billionaires/" data-vars-event-label="U18 - Channel: Billionaires - Position 1 - Section: Australia&#39;s Richest"
-						 data-ga-track="U18 - Channel: Billionaires - Position 1 - Section: Australia&#39;s Richest">Australia's Richest</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/taiwan-billionaires/" data-vars-event-label="U18 - Channel: Billionaires - Position 1 - Section: Taiwan&#39;s Richest"
-						 data-ga-track="U18 - Channel: Billionaires - Position 1 - Section: Taiwan&#39;s Richest">Taiwan's Richest</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/singapore-billionaires/" data-vars-event-label="U18 - Channel: Billionaires - Position 1 - Section: Singapore&#39;s Richest"
-						 data-ga-track="U18 - Channel: Billionaires - Position 1 - Section: Singapore&#39;s Richest">Singapore's Richest</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/philippines-billionaires/" data-vars-event-label="U18 - Channel: Billionaires - Position 1 - Section: Philippines&#39; Richest"
-						 data-ga-track="U18 - Channel: Billionaires - Position 1 - Section: Philippines&#39; Richest">Philippines'
-							Richest</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/hong-kong-billionaires/" data-vars-event-label="U18 - Channel: Billionaires - Position 1 - Section: Hong Kong&#39;s Richest"
-						 data-ga-track="U18 - Channel: Billionaires - Position 1 - Section: Hong Kong&#39;s Richest">Hong Kong's Richest</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/malaysia-billionaires/" data-vars-event-label="U18 - Channel: Billionaires - Position 1 - Section: Malaysia&#39;s Richest"
-						 data-ga-track="U18 - Channel: Billionaires - Position 1 - Section: Malaysia&#39;s Richest">Malaysia's Richest</a></li>
-				</ul>
-			</section>
-			<section class="header__channel">
-				<h4 class="header__title i-amphtml-accordion-header" data-vars-event-label="U18 - Channel: Innovation - Position 2 - Channel Expanded"
-				 data-ga-track="U18 - Channel: Innovation - Position 2 - Channel Expanded" role="button" aria-controls="header-accordion_AMP_content_1"
-				 aria-expanded="false" tabindex="0"><span class="header__color--diamondring-blue">Innovation</span></h4>
-				<ul class="header__sections header__color--diamondring-blue i-amphtml-accordion-content" id="header-accordion_AMP_content_1">
-					<li class="header__section header__section--all"><a href="https://www.forbes.com/innovation/"
-						 data-vars-event-label="U18 - Channel: Innovation - Position 2" data-ga-track="U18 - Channel: Innovation - Position 2">All
-							Innovation</a><svg class="dropdown-arrow" fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-							<path d="M0 0h24v24H0z" fill="none"></path>
-							<path d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"></path>
-						</svg></li>
-					<li class="header__section"><a href="https://www.forbes.com/ai-big-data/" data-vars-event-label="U18 - Channel: Innovation - Position 2 - Section: AI &amp; Big Data"
-						 data-ga-track="U18 - Channel: Innovation - Position 2 - Section: AI &amp; Big Data">AI &amp; Big Data</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/cloud100/" data-vars-event-label="U18 - Channel: Innovation - Position 2 - Section: Cloud 100 2018"
-						 data-ga-track="U18 - Channel: Innovation - Position 2 - Section: Cloud 100 2018">Cloud 100 2018</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/consumer-tech/" data-vars-event-label="U18 - Channel: Innovation - Position 2 - Section: Consumer Tech"
-						 data-ga-track="U18 - Channel: Innovation - Position 2 - Section: Consumer Tech">Consumer Tech</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/cybersecurity/" data-vars-event-label="U18 - Channel: Innovation - Position 2 - Section: Cybersecurity"
-						 data-ga-track="U18 - Channel: Innovation - Position 2 - Section: Cybersecurity">Cybersecurity</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/enterprise-cloud/" data-vars-event-label="U18 - Channel: Innovation - Position 2 - Section: Enterprise &amp; Cloud"
-						 data-ga-track="U18 - Channel: Innovation - Position 2 - Section: Enterprise &amp; Cloud">Enterprise &amp; Cloud</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/games/" data-vars-event-label="U18 - Channel: Innovation - Position 2 - Section: Games"
-						 data-ga-track="U18 - Channel: Innovation - Position 2 - Section: Games">Games</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/green-tech/" data-vars-event-label="U18 - Channel: Innovation - Position 2 - Section: Green Tech"
-						 data-ga-track="U18 - Channel: Innovation - Position 2 - Section: Green Tech">Green Tech</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/healthcare/" data-vars-event-label="U18 - Channel: Innovation - Position 2 - Section: Healthcare"
-						 data-ga-track="U18 - Channel: Innovation - Position 2 - Section: Healthcare">Healthcare</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/kpmg/" data-vars-event-label="U18 - Channel: Innovation - Position 2 - Section: KPMG BrandVoice"
-						 data-ga-track="U18 - Channel: Innovation - Position 2 - Section: KPMG BrandVoice">KPMG BrandVoice</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/nvidia/" data-vars-event-label="U18 - Channel: Innovation - Position 2 - Section: NVIDIA BrandVoice"
-						 data-ga-track="U18 - Channel: Innovation - Position 2 - Section: NVIDIA BrandVoice">NVIDIA BrandVoice</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/oracle/" data-vars-event-label="U18 - Channel: Innovation - Position 2 - Section: Oracle BrandVoice"
-						 data-ga-track="U18 - Channel: Innovation - Position 2 - Section: Oracle BrandVoice">Oracle BrandVoice</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/riverbed/#65149b374561" data-vars-event-label="U18 - Channel: Innovation - Position 2 - Section: Riverbed BrandVoice"
-						 data-ga-track="U18 - Channel: Innovation - Position 2 - Section: Riverbed BrandVoice">Riverbed BrandVoice</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/sap/" data-vars-event-label="U18 - Channel: Innovation - Position 2 - Section: SAP BrandVoice"
-						 data-ga-track="U18 - Channel: Innovation - Position 2 - Section: SAP BrandVoice">SAP BrandVoice</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/science/" data-vars-event-label="U18 - Channel: Innovation - Position 2 - Section: Science"
-						 data-ga-track="U18 - Channel: Innovation - Position 2 - Section: Science">Science</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sharing-economy/" data-vars-event-label="U18 - Channel: Innovation - Position 2 - Section: Sharing Economy"
-						 data-ga-track="U18 - Channel: Innovation - Position 2 - Section: Sharing Economy">Sharing Economy</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/social-media/" data-vars-event-label="U18 - Channel: Innovation - Position 2 - Section: Social Media"
-						 data-ga-track="U18 - Channel: Innovation - Position 2 - Section: Social Media">Social Media</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/venture-capital/" data-vars-event-label="U18 - Channel: Innovation - Position 2 - Section: Venture Capital"
-						 data-ga-track="U18 - Channel: Innovation - Position 2 - Section: Venture Capital">Venture Capital</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/cio-network/" data-vars-event-label="U18 - Channel: Innovation - Position 2 - Section: CIO Network"
-						 data-ga-track="U18 - Channel: Innovation - Position 2 - Section: CIO Network">CIO Network</a></li>
-				</ul>
-			</section>
-			<section class="header__channel">
-				<h4 class="header__title i-amphtml-accordion-header" data-vars-event-label="U18 - Channel: Leadership - Position 3 - Channel Expanded"
-				 data-ga-track="U18 - Channel: Leadership - Position 3 - Channel Expanded" role="button" aria-controls="header-accordion_AMP_content_2"
-				 aria-expanded="false" tabindex="0"><span class="header__color--fortknox-gold">Leadership</span></h4>
-				<ul class="header__sections header__color--fortknox-gold i-amphtml-accordion-content" id="header-accordion_AMP_content_2">
-					<li class="header__section header__section--all"><a href="https://www.forbes.com/leadership/"
-						 data-vars-event-label="U18 - Channel: Leadership - Position 3" data-ga-track="U18 - Channel: Leadership - Position 3">All
-							Leadership</a><svg class="dropdown-arrow" fill="#FFFFFF" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-							<path d="M0 0h24v24H0z" fill="none"></path>
-							<path d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"></path>
-						</svg></li>
-					<li class="header__section"><a href="https://www.forbes.com/careers/" data-vars-event-label="U18 - Channel: Leadership - Position 3 - Section: Careers"
-						 data-ga-track="U18 - Channel: Leadership - Position 3 - Section: Careers">Careers</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/cmo-network/" data-vars-event-label="U18 - Channel: Leadership - Position 3 - Section: CMO Network"
-						 data-ga-track="U18 - Channel: Leadership - Position 3 - Section: CMO Network">CMO Network</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/deloitte/" data-vars-event-label="U18 - Channel: Leadership - Position 3 - Section: Deloitte Brandvoice"
-						 data-ga-track="U18 - Channel: Leadership - Position 3 - Section: Deloitte Brandvoice">Deloitte Brandvoice</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/education/" data-vars-event-label="U18 - Channel: Leadership - Position 3 - Section: Education"
-						 data-ga-track="U18 - Channel: Leadership - Position 3 - Section: Education">Education</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/entrepreneurs/" data-vars-event-label="U18 - Channel: Leadership - Position 3 - Section: Entrepreneurs"
-						 data-ga-track="U18 - Channel: Leadership - Position 3 - Section: Entrepreneurs">Entrepreneurs</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/franchises/" data-vars-event-label="U18 - Channel: Leadership - Position 3 - Section: Franchises"
-						 data-ga-track="U18 - Channel: Leadership - Position 3 - Section: Franchises">Franchises</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/leadership-strategy/" data-vars-event-label="U18 - Channel: Leadership - Position 3 - Section: Leadership Strategy"
-						 data-ga-track="U18 - Channel: Leadership - Position 3 - Section: Leadership Strategy">Leadership Strategy</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/small-business/" data-vars-event-label="U18 - Channel: Leadership - Position 3 - Section: Small Business"
-						 data-ga-track="U18 - Channel: Leadership - Position 3 - Section: Small Business">Small Business</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/under30/" data-vars-event-label="U18 - Channel: Leadership - Position 3 - Section: Under 30"
-						 data-ga-track="U18 - Channel: Leadership - Position 3 - Section: Under 30">Under 30</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/women-at-forbes/" data-vars-event-label="U18 - Channel: Leadership - Position 3 - Section: Women@Forbes"
-						 data-ga-track="U18 - Channel: Leadership - Position 3 - Section: Women@Forbes">Women@Forbes</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/workday/" data-vars-event-label="U18 - Channel: Leadership - Position 3 - Section: Workday BrandVoice"
-						 data-ga-track="U18 - Channel: Leadership - Position 3 - Section: Workday BrandVoice">Workday BrandVoice</a></li>
-				</ul>
-			</section>
-			<section class="header__channel">
-				<h4 class="header__title i-amphtml-accordion-header" data-vars-event-label="U18 - Channel: Money - Position 4 - Channel Expanded"
-				 data-ga-track="U18 - Channel: Money - Position 4 - Channel Expanded" role="button" aria-controls="header-accordion_AMP_content_3"
-				 aria-expanded="false" tabindex="0"><span class="header__color--benjamins-green">Money</span></h4>
-				<ul class="header__sections header__color--benjamins-green i-amphtml-accordion-content" id="header-accordion_AMP_content_3">
-					<li class="header__section header__section--all"><a href="https://www.forbes.com/money/" data-vars-event-label="U18 - Channel: Money - Position 4"
-						 data-ga-track="U18 - Channel: Money - Position 4">All Money</a><svg class="dropdown-arrow" fill="#FFFFFF" height="24"
-						 viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-							<path d="M0 0h24v24H0z" fill="none"></path>
-							<path d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"></path>
-						</svg></li>
-					<li class="header__section"><a href="https://www.forbes.com/banking-insurance/" data-vars-event-label="U18 - Channel: Money - Position 4 - Section: Banking &amp; Insurance"
-						 data-ga-track="U18 - Channel: Money - Position 4 - Section: Banking &amp; Insurance">Banking &amp; Insurance</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/braintree/" data-vars-event-label="U18 - Channel: Money - Position 4 - Section: Braintree BrandVoice"
-						 data-ga-track="U18 - Channel: Money - Position 4 - Section: Braintree BrandVoice">Braintree BrandVoice</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/capitalone/" data-vars-event-label="U18 - Channel: Money - Position 4 - Section: Capital One BrandVoice"
-						 data-ga-track="U18 - Channel: Money - Position 4 - Section: Capital One BrandVoice">Capital One BrandVoice</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/crypto-blockchain/" data-vars-event-label="U18 - Channel: Money - Position 4 - Section: Crypto &amp; Blockchain"
-						 data-ga-track="U18 - Channel: Money - Position 4 - Section: Crypto &amp; Blockchain">Crypto &amp; Blockchain</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/etfs-mutual-funds/" data-vars-event-label="U18 - Channel: Money - Position 4 - Section: ETFs &amp; Mutual Funds"
-						 data-ga-track="U18 - Channel: Money - Position 4 - Section: ETFs &amp; Mutual Funds">ETFs &amp; Mutual Funds</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/fintech/" data-vars-event-label="U18 - Channel: Money - Position 4 - Section: Fintech"
-						 data-ga-track="U18 - Channel: Money - Position 4 - Section: Fintech">Fintech</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/hedge-funds-private-equity/" data-vars-event-label="U18 - Channel: Money - Position 4 - Section: Hedge Funds &amp; Private Equity"
-						 data-ga-track="U18 - Channel: Money - Position 4 - Section: Hedge Funds &amp; Private Equity">Hedge Funds &amp;
-							Private Equity</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/impactpartners/" data-vars-event-label="U18 - Channel: Money - Position 4 - Section: Impact Partners BrandVoice"
-						 data-ga-track="U18 - Channel: Money - Position 4 - Section: Impact Partners BrandVoice">Impact Partners
-							BrandVoice</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/investing/" data-vars-event-label="U18 - Channel: Money - Position 4 - Section: Investing"
-						 data-ga-track="U18 - Channel: Money - Position 4 - Section: Investing">Investing</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/markets/" data-vars-event-label="U18 - Channel: Money - Position 4 - Section: Markets"
-						 data-ga-track="U18 - Channel: Money - Position 4 - Section: Markets">Markets</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/personal-finance/" data-vars-event-label="U18 - Channel: Money - Position 4 - Section: Personal Finance"
-						 data-ga-track="U18 - Channel: Money - Position 4 - Section: Personal Finance">Personal Finance</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/retirement/" data-vars-event-label="U18 - Channel: Money - Position 4 - Section: Retirement"
-						 data-ga-track="U18 - Channel: Money - Position 4 - Section: Retirement">Retirement</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/taxes/" data-vars-event-label="U18 - Channel: Money - Position 4 - Section: Taxes"
-						 data-ga-track="U18 - Channel: Money - Position 4 - Section: Taxes">Taxes</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/wealth-management/" data-vars-event-label="U18 - Channel: Money - Position 4 - Section: Wealth Management"
-						 data-ga-track="U18 - Channel: Money - Position 4 - Section: Wealth Management">Wealth Management</a></li>
-				</ul>
-			</section>
-			<section class="header__channel">
-				<h4 class="header__title i-amphtml-accordion-header" data-vars-event-label="U18 - Channel: Consumer - Position 5 - Channel Expanded"
-				 data-ga-track="U18 - Channel: Consumer - Position 5 - Channel Expanded" role="button" aria-controls="header-accordion_AMP_content_4"
-				 aria-expanded="false" tabindex="0"><span class="header__color--capitalist-teal">Consumer</span></h4>
-				<ul class="header__sections header__color--capitalist-teal i-amphtml-accordion-content" id="header-accordion_AMP_content_4">
-					<li class="header__section header__section--all"><a href="https://www.forbes.com/consumer/" data-vars-event-label="U18 - Channel: Consumer - Position 5"
-						 data-ga-track="U18 - Channel: Consumer - Position 5">All Consumer</a><svg class="dropdown-arrow" fill="#FFFFFF"
-						 height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-							<path d="M0 0h24v24H0z" fill="none"></path>
-							<path d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"></path>
-						</svg></li>
-					<li class="header__section"><a href="https://www.forbes.com/food-drink/" data-vars-event-label="U18 - Channel: Consumer - Position 5 - Section: Food &amp; Drink"
-						 data-ga-track="U18 - Channel: Consumer - Position 5 - Section: Food &amp; Drink">Food &amp; Drink</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/hollywood-entertainment/" data-vars-event-label="U18 - Channel: Consumer - Position 5 - Section: Hollywood &amp; Entertainment"
-						 data-ga-track="U18 - Channel: Consumer - Position 5 - Section: Hollywood &amp; Entertainment">Hollywood &amp;
-							Entertainment</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/media/" data-vars-event-label="U18 - Channel: Consumer - Position 5 - Section: Media"
-						 data-ga-track="U18 - Channel: Consumer - Position 5 - Section: Media">Media</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/real-estate/" data-vars-event-label="U18 - Channel: Consumer - Position 5 - Section: Real Estate"
-						 data-ga-track="U18 - Channel: Consumer - Position 5 - Section: Real Estate">Real Estate</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/retail/" data-vars-event-label="U18 - Channel: Consumer - Position 5 - Section: Retail"
-						 data-ga-track="U18 - Channel: Consumer - Position 5 - Section: Retail">Retail</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sportsmoney/" data-vars-event-label="U18 - Channel: Consumer - Position 5 - Section: SportsMoney"
-						 data-ga-track="U18 - Channel: Consumer - Position 5 - Section: SportsMoney">SportsMoney</a></li>
-				</ul>
-			</section>
-			<section class="header__channel">
-				<h4 class="header__title i-amphtml-accordion-header" data-vars-event-label="U18 - Channel: Industry - Position 6 - Channel Expanded"
-				 data-ga-track="U18 - Channel: Industry - Position 6 - Channel Expanded" role="button" aria-controls="header-accordion_AMP_content_5"
-				 aria-expanded="false" tabindex="0"><span class="header__color--statuesque-bronze">Industry</span></h4>
-				<ul class="header__sections header__color--statuesque-bronze i-amphtml-accordion-content" id="header-accordion_AMP_content_5">
-					<li class="header__section header__section--all"><a href="https://www.forbes.com/industry/" data-vars-event-label="U18 - Channel: Industry - Position 6"
-						 data-ga-track="U18 - Channel: Industry - Position 6">All Industry</a><svg class="dropdown-arrow" fill="#FFFFFF"
-						 height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-							<path d="M0 0h24v24H0z" fill="none"></path>
-							<path d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"></path>
-						</svg></li>
-					<li class="header__section"><a href="https://www.forbes.com/aerospace-defense/" data-vars-event-label="U18 - Channel: Industry - Position 6 - Section: Aerospace &amp; Defense"
-						 data-ga-track="U18 - Channel: Industry - Position 6 - Section: Aerospace &amp; Defense">Aerospace &amp; Defense</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/energy/" data-vars-event-label="U18 - Channel: Industry - Position 6 - Section: Energy"
-						 data-ga-track="U18 - Channel: Industry - Position 6 - Section: Energy">Energy</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/manufacturing/" data-vars-event-label="U18 - Channel: Industry - Position 6 - Section: Manufacturing"
-						 data-ga-track="U18 - Channel: Industry - Position 6 - Section: Manufacturing">Manufacturing</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/mitsubishiheavyindustries/"
-						 data-vars-event-label="U18 - Channel: Industry - Position 6 - Section: Mitsubishi Heavy Industries BrandVoice"
-						 data-ga-track="U18 - Channel: Industry - Position 6 - Section: Mitsubishi Heavy Industries BrandVoice">Mitsubishi
-							Heavy Industries BrandVoice</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/policy/" data-vars-event-label="U18 - Channel: Industry - Position 6 - Section: Policy"
-						 data-ga-track="U18 - Channel: Industry - Position 6 - Section: Policy">Policy</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/transportation/" data-vars-event-label="U18 - Channel: Industry - Position 6 - Section: Transportation"
-						 data-ga-track="U18 - Channel: Industry - Position 6 - Section: Transportation">Transportation</a></li>
-				</ul>
-			</section>
-			<section class="header__channel">
-				<h4 class="header__title i-amphtml-accordion-header" data-vars-event-label="U18 - Channel: Lifestyle - Position 7 - Channel Expanded"
-				 data-ga-track="U18 - Channel: Lifestyle - Position 7 - Channel Expanded" role="button" aria-controls="header-accordion_AMP_content_6"
-				 aria-expanded="false" tabindex="0"><span class="header__color--merlot-burgundy">Lifestyle</span></h4>
-				<ul class="header__sections header__color--merlot-burgundy i-amphtml-accordion-content" id="header-accordion_AMP_content_6">
-					<li class="header__section header__section--all"><a href="https://www.forbes.com/lifestyle/" data-vars-event-label="U18 - Channel: Lifestyle - Position 7"
-						 data-ga-track="U18 - Channel: Lifestyle - Position 7">All Lifestyle</a><svg class="dropdown-arrow" fill="#FFFFFF"
-						 height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
-							<path d="M0 0h24v24H0z" fill="none"></path>
-							<path d="M21 11H6.83l3.58-3.59L9 6l-6 6 6 6 1.41-1.41L6.83 13H21z"></path>
-						</svg></li>
-					<li class="header__section"><a href="https://www.forbes.com/arts/" data-vars-event-label="U18 - Channel: Lifestyle - Position 7 - Section: Arts"
-						 data-ga-track="U18 - Channel: Lifestyle - Position 7 - Section: Arts">Arts</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/forbeslife/" data-vars-event-label="U18 - Channel: Lifestyle - Position 7 - Section: ForbesLife"
-						 data-ga-track="U18 - Channel: Lifestyle - Position 7 - Section: ForbesLife">ForbesLife</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/vices/" data-vars-event-label="U18 - Channel: Lifestyle - Position 7 - Section: Vices"
-						 data-ga-track="U18 - Channel: Lifestyle - Position 7 - Section: Vices">Vices</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/boats-planes/" data-vars-event-label="U18 - Channel: Lifestyle - Position 7 - Section: Boats &amp; Planes"
-						 data-ga-track="U18 - Channel: Lifestyle - Position 7 - Section: Boats &amp; Planes">Boats &amp; Planes</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/watches-jewelry/" data-vars-event-label="U18 - Channel: Lifestyle - Position 7 - Section: Watches &amp; Jewelry"
-						 data-ga-track="U18 - Channel: Lifestyle - Position 7 - Section: Watches &amp; Jewelry">Watches &amp; Jewelry</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/cars-bikes/" data-vars-event-label="U18 - Channel: Lifestyle - Position 7 - Section: Cars &amp; Bikes"
-						 data-ga-track="U18 - Channel: Lifestyle - Position 7 - Section: Cars &amp; Bikes">Cars &amp; Bikes</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/colehaan/" data-vars-event-label="U18 - Channel: Lifestyle - Position 7 - Section: Cole Haan BrandVoice"
-						 data-ga-track="U18 - Channel: Lifestyle - Position 7 - Section: Cole Haan BrandVoice">Cole Haan BrandVoice</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/travel/" data-vars-event-label="U18 - Channel: Lifestyle - Position 7 - Section: Travel"
-						 data-ga-track="U18 - Channel: Lifestyle - Position 7 - Section: Travel">Travel</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/forbes-travel-guide/" data-vars-event-label="U18 - Channel: Lifestyle - Position 7 - Section: Forbes Travel Guide"
-						 data-ga-track="U18 - Channel: Lifestyle - Position 7 - Section: Forbes Travel Guide">Forbes Travel Guide</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/dining-drinking/" data-vars-event-label="U18 - Channel: Lifestyle - Position 7 - Section: Dining &amp; Drinking"
-						 data-ga-track="U18 - Channel: Lifestyle - Position 7 - Section: Dining &amp; Drinking">Dining &amp; Drinking</a></li>
-				</ul>
-			</section>
-			<section class="header__channel">
-				<h4 class="header__title i-amphtml-accordion-header" data-vars-event-label="U18 - Channel: Featured - Position 8 - Channel Expanded"
-				 data-ga-track="U18 - Channel: Featured - Position 8 - Channel Expanded" role="button" aria-controls="header-accordion_AMP_content_7"
-				 aria-expanded="false" tabindex="0"><span class="header__color--default-gray">Featured</span></h4>
-				<ul class="header__sections header__color--default-gray i-amphtml-accordion-content" id="header-accordion_AMP_content_7">
-					<li class="header__section"><a href="https://www.forbes.com/1850brandcoffee/bold-moves/" data-vars-event-label="U18 - Channel: Featured - Position 8 - Section: 1850 Brand Coffee BrandVoice: Bold Moves"
-						 data-ga-track="U18 - Channel: Featured - Position 8 - Section: 1850 Brand Coffee BrandVoice: Bold Moves">1850
-							Brand Coffee BrandVoice: Bold Moves</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/citrix/empowering-ambition/" data-vars-event-label="U18 - Channel: Featured - Position 8 - Section: Citrix BrandVoice: Empowering Ambition"
-						 data-ga-track="U18 - Channel: Featured - Position 8 - Section: Citrix BrandVoice: Empowering Ambition">Citrix
-							BrandVoice: Empowering Ambition</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/forbes-400/" data-vars-event-label="U18 - Channel: Featured - Position 8 - Section: Forbes 400"
-						 data-ga-track="U18 - Channel: Featured - Position 8 - Section: Forbes 400">Forbes 400</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/editors-picks/" data-vars-event-label="U18 - Channel: Featured - Position 8 - Section: Forbes Editors&#39; Picks"
-						 data-ga-track="U18 - Channel: Featured - Position 8 - Section: Forbes Editors&#39; Picks">Forbes Editors' Picks</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/insights-intelai/ai-issue-2/" data-vars-event-label="U18 - Channel: Featured - Position 8 - Section: Forbes Insights: AI"
-						 data-ga-track="U18 - Channel: Featured - Position 8 - Section: Forbes Insights: AI">Forbes Insights: AI</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/insights-nuveen/closed-end-funds/"
-						 data-vars-event-label="U18 - Channel: Featured - Position 8 - Section: Forbes Insights: Are You Overlooking Income Opportunities? Open Your Eyes To Closed-End Funds"
-						 data-ga-track="U18 - Channel: Featured - Position 8 - Section: Forbes Insights: Are You Overlooking Income Opportunities? Open Your Eyes To Closed-End Funds">Forbes
-							Insights: Are You Overlooking Income Opportunities? Open Your Eyes To Closed-End Funds</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/insights-inteliot/connecting-tomorrow/edge-to-edge-vision-and-ai/"
-						 data-vars-event-label="U18 - Channel: Featured - Position 8 - Section: Forbes Insights: Connecting Tomorrow"
-						 data-ga-track="U18 - Channel: Featured - Position 8 - Section: Forbes Insights: Connecting Tomorrow">Forbes
-							Insights: Connecting Tomorrow</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/video/" data-vars-event-label="U18 - Channel: Featured - Position 8 - Section: Forbes Video"
-						 data-ga-track="U18 - Channel: Featured - Position 8 - Section: Forbes Video">Forbes Video</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/forbeswealthteam/2018/10/03/impact-investing-the-billionaires-building-change/"
-						 data-vars-event-label="U18 - Channel: Featured - Position 8 - Section: Impact Investing" data-ga-track="U18 - Channel: Featured - Position 8 - Section: Impact Investing">Impact
-							Investing</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/ofx/global-movers/" data-vars-event-label="U18 - Channel: Featured - Position 8 - Section: OFX BrandVoice: Global Movers"
-						 data-ga-track="U18 - Channel: Featured - Position 8 - Section: OFX BrandVoice: Global Movers">OFX BrandVoice:
-							Global Movers</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/feature/scale-up/" data-vars-event-label="U18 - Channel: Featured - Position 8 - Section: Scale Up"
-						 data-ga-track="U18 - Channel: Featured - Position 8 - Section: Scale Up">Scale Up</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/themacallan/2018/10/01/the-macallan-30-stories-of-gratitude-from-exceptional-business-leaders/"
-						 data-vars-event-label="U18 - Channel: Featured - Position 8 - Section: The Macallan BrandVoice: Stories Of Gratitude"
-						 data-ga-track="U18 - Channel: Featured - Position 8 - Section: The Macallan BrandVoice: Stories Of Gratitude">The
-							Macallan BrandVoice: Stories Of Gratitude</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/forbeswealthteam/2018/10/03/explore-the-investing-strategies-of-americas-billionaires/"
-						 data-vars-event-label="U18 - Channel: Featured - Position 8 - Section: The Portfolio" data-ga-track="U18 - Channel: Featured - Position 8 - Section: The Portfolio">The
-							Portfolio</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/top-wealth-advisors/" data-vars-event-label="U18 - Channel: Featured - Position 8 - Section: Top Wealth Advisors"
-						 data-ga-track="U18 - Channel: Featured - Position 8 - Section: Top Wealth Advisors">Top Wealth Advisors</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/vanguard/find-your-retirement/" data-vars-event-label="U18 - Channel: Featured - Position 8 - Section: Vanguard BrandVoice: Find Your Retirement"
-						 data-ga-track="U18 - Channel: Featured - Position 8 - Section: Vanguard BrandVoice: Find Your Retirement">Vanguard
-							BrandVoice: Find Your Retirement</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/feature/views-from-under-30-summit/"
-						 data-vars-event-label="U18 - Channel: Featured - Position 8 - Section: Views From The Under 30 Summit"
-						 data-ga-track="U18 - Channel: Featured - Position 8 - Section: Views From The Under 30 Summit">Views From The
-							Under 30 Summit</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/forbesleadershipteam/2018/10/17/the-making-of-a-small-giant/"
-						 data-vars-event-label="U18 - Channel: Featured - Position 8 - Section: Pivotal Moments: The Making Of A Small Giant"
-						 data-ga-track="U18 - Channel: Featured - Position 8 - Section: Pivotal Moments: The Making Of A Small Giant">Pivotal
-							Moments: The Making Of A Small Giant</a></li>
-				</ul>
-			</section>
-			<section class="header__channel">
-				<h4 class="header__title i-amphtml-accordion-header" data-vars-event-label="U18 - Channel: BrandVoice - Position 9 - Channel Expanded"
-				 data-ga-track="U18 - Channel: BrandVoice - Position 9 - Channel Expanded" role="button" aria-controls="header-accordion_AMP_content_8"
-				 aria-expanded="false" tabindex="0"><span class="header__color--brandvoice-red">BrandVoice</span></h4>
-				<ul class="header__sections header__color--brandvoice-red i-amphtml-accordion-content" id="header-accordion_AMP_content_8">
-					<li class="header__section"><a href="https://www.forbes.com/sites/braintree/" data-vars-event-label="U18 - Channel: BrandVoice - Position 9 - Section: Braintree"
-						 data-ga-track="U18 - Channel: BrandVoice - Position 9 - Section: Braintree">Braintree</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/capitalone/" data-vars-event-label="U18 - Channel: BrandVoice - Position 9 - Section: Capital One"
-						 data-ga-track="U18 - Channel: BrandVoice - Position 9 - Section: Capital One">Capital One</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/colehaan/" data-vars-event-label="U18 - Channel: BrandVoice - Position 9 - Section: Cole Haan"
-						 data-ga-track="U18 - Channel: BrandVoice - Position 9 - Section: Cole Haan">Cole Haan</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/deloitte/" data-vars-event-label="U18 - Channel: BrandVoice - Position 9 - Section: Deloitte"
-						 data-ga-track="U18 - Channel: BrandVoice - Position 9 - Section: Deloitte">Deloitte</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/impactpartners/" data-vars-event-label="U18 - Channel: BrandVoice - Position 9 - Section: Impact Partners "
-						 data-ga-track="U18 - Channel: BrandVoice - Position 9 - Section: Impact Partners ">Impact Partners </a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/kpmg/" data-vars-event-label="U18 - Channel: BrandVoice - Position 9 - Section: KPMG"
-						 data-ga-track="U18 - Channel: BrandVoice - Position 9 - Section: KPMG">KPMG</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/mitsubishiheavyindustries/"
-						 data-vars-event-label="U18 - Channel: BrandVoice - Position 9 - Section: Mitsubishi Heavy Industries"
-						 data-ga-track="U18 - Channel: BrandVoice - Position 9 - Section: Mitsubishi Heavy Industries">Mitsubishi Heavy
-							Industries</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/nvidia/" data-vars-event-label="U18 - Channel: BrandVoice - Position 9 - Section: NVIDIA"
-						 data-ga-track="U18 - Channel: BrandVoice - Position 9 - Section: NVIDIA">NVIDIA</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/oracle/" data-vars-event-label="U18 - Channel: BrandVoice - Position 9 - Section: Oracle"
-						 data-ga-track="U18 - Channel: BrandVoice - Position 9 - Section: Oracle">Oracle</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/riverbed/#65149b374561" data-vars-event-label="U18 - Channel: BrandVoice - Position 9 - Section: Riverbed"
-						 data-ga-track="U18 - Channel: BrandVoice - Position 9 - Section: Riverbed">Riverbed</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/sap/" data-vars-event-label="U18 - Channel: BrandVoice - Position 9 - Section: SAP"
-						 data-ga-track="U18 - Channel: BrandVoice - Position 9 - Section: SAP">SAP</a></li>
-					<li class="header__section"><a href="https://www.forbes.com/sites/workday/" data-vars-event-label="U18 - Channel: BrandVoice - Position 9 - Section: Workday"
-						 data-ga-track="U18 - Channel: BrandVoice - Position 9 - Section: Workday">Workday</a></li>
-				</ul>
-			</section>
-			<section class="header__channel">
-				<h4 class="header__title i-amphtml-accordion-header" data-vars-event-label="U18 - Channel: Lists - Position 10 - Channel Expanded"
-				 data-ga-track="U18 - Channel: Lists - Position 10 - Channel Expanded" role="button" aria-controls="header-accordion_AMP_content_9"
-				 aria-expanded="false" tabindex="0"><span class="header__color--default-gray">Lists</span></h4>
-				<ul class="no-sections i-amphtml-accordion-content" id="header-accordion_AMP_content_9"></ul>
-			</section>
-		</amp-accordion>
-	</div>
-	<amp-sidebar id="header-sidebar" layout="nodisplay" side="left" class="i-amphtml-element i-amphtml-layout-nodisplay i-amphtml-overlay i-amphtml-scrollable"
-	 hidden="" aria-hidden="true" role="menu" tabindex="-1"><button class="i-amphtml-screen-reader" tabindex="-1">Close
-			the sidebar</button></amp-sidebar>
-	<script>window["forbes"] = window["forbes"] || {}; window["forbes"]["simple-site"] = { "tracking": { "author": "Jim Gorzelany", "bertie": "true", "blogType": "individual", "brandVoice": "", "brandVoiceLive": "", "bvContentSource": "", "bvProgramType": "", "categories": "Industry,Transportation,Lifestyle,ForbesLife,Cars & Bikes,Forbes Magazine,ForbesLife Magazine", "channel": "lifestyle", "channelNames": "Industry,Lifestyle,Forbes Magazine", "contribActive": "false", "contribDivision": "FC", "contribType": "Contributor", "coreBrands": "", "customPage": "https://www.forbes.com/sites/jimgorzelany/2018/09/28/2019-car-guide-game-changing-sedans-sports-cars-and-suvs/", "coAuthorControl": "false", "coAuthor": "", "dfpZone": "article-d-prem", "doNotPaginate": "", "edit": "", "editorsPick": true, "entitySegments": ["ai"], "exelateData": { "vars": { "pubId": "234", "siteId": "003" }, "extraUrlParams": { "channelNames": "Industry,Lifestyle,Forbes Magazine", "sectionNames": "Industry:Transportation,Lifestyle:ForbesLife,Lifestyle:Cars & Bikes,Forbes Magazine:ForbesLife Magazine", "hashtags": "Autos" } }, "fastAt": "individual", "fastAu": "blogAuthorId/blog/author/88368", "fastCh": "channel_81", "fastPt": "blog", "fastSe": "section_1285", "fastSu": "https://www.forbes.com/sites/jimgorzelany/2018/09/28/2019-car-guide-game-changing-sedans-sports-cars-and-suvs/", "fastUrl": "https://fast.forbes.com/fps/cookie_backup.php?ch=channel_81&se=section_1285&su=CANONICAL_URL&pt=GoogleAMP&i=blogAndPostId/blog/post/1497-5b97eddc42f99b632a2af80e&au=blogAuthorId/blog/author/88368&at=individual&ts=TIMESTAMP&re=DOCUMENT_REFERRER&rn=RANDOM&mb=t&op=user_msg", "hashtags": "Autos", "hashtagsTrending": "", "heroImage": "false", "imageCount": 13, "insights": "", "naturalID": "blogAndPostId/blog/post/1497-5b97eddc42f99b632a2af80e", "newsKeywords": "", "pageNumber": 1, "pageTitle": "2019 ForbesLife Luxury Car Guide: Game-Changing Sports Cars and SUVs", "pageTotal": 1, "pageType": "blog:premium", "paragraphs": 58, "primaryChannel": "Lifestyle", "primarySection": "Cars & Bikes", "publishDate": "2018-09-28", "publishHour": "06", "quantcastData": ["AMP", "Channel.lifestyle", "Section.jimgorzelanyblog", "Hashtag.Autos", "Author.Jim Gorzelany.2019 ForbesLife Luxury Car Guide: Game-Changing Sports Cars and SUVs"], "section": "jimgorzelanyblog", "sectionNames": "Industry:Transportation,Lifestyle:ForbesLife,Lifestyle:Cars & Bikes,Forbes Magazine:ForbesLife Magazine", "sections": "lifestyle", "simpleReachData": { "pid": "50e4a8434240cf5c4b000009", "title": "2019 ForbesLife Luxury Car Guide: Game-Changing Sports Cars and SUVs", "authors": ["Jim Gorzelany"], "published_at": "2018-09-28T10:00:00.000Z", "categories": ["lifestyle"], "tags": ["site::jimgorzelany", "slot::", "type::article"], "article_id": "blogAndPostId/blog/post/1497-5b97eddc42f99b632a2af80e", "ignore_metadata": true }, "siteSlug": "jimgorzelany", "slot": "", "streamPosition": 0, "templateType": "premium", "title": "2019 ForbesLife Luxury Car Guide: Game-Changing Sports Cars and SUVs", "updateDate": "2018-09-27", "updateHour": "18", "version": "ampPlus", "videoLocation": "", "weekdayPublish": "Friday", "seniorContributor": "false" }, "topStories": [{ "content": { "naturalId": "blogAndPostId/blog/post/4819-5bbe745ad58dc53573ede2c7", "title": "Teaching Technology: Empowering Girls To Change The World", "date": 1539208308534, "image": "https://specials-images.forbesimg.com/imageserve/5bbe745231358e59f57a53d2/960x0.jpg?&cropX1=29&cropX2=670&cropY1=72&cropY2=432", "type": "blog", "uri": "https://www.forbes.com/sites/unicefusa/2018/10/10/teaching-technology-empowering-girls-to-change-the-world/", "authors": [{ "name": "Sarah Ferguson", "avatars": [{ "size": 136, "image": "https://blogs-images.forbes.com/unicefusa/files/2017/01/sarahferguson1_avatar_1483738199.jpg" }, { "size": 40, "image": "https://blogs-images.forbes.com/unicefusa/files/2017/01/sarahferguson1_avatar_1483738199-40x40.jpg" }, { "size": 400, "image": "https://blogs-images.forbes.com/unicefusa/files/2017/01/sarahferguson1_avatar_1483738199.jpg" }, { "size": 62, "image": "https://blogs-images.forbes.com/unicefusa/files/2017/01/sarahferguson1_avatar_1483738199-62x62.jpg" }], "url": "http://www.forbes.com/sites/unicefusa/", "type": "AdVoice", "profileUrl": "/sites/unicefusa/people/sarahferguson1/", "authorType": "ad", "tagName": "Children First.", "blog": false, "advoiceBrand": "UNICEF USA", "allowEmail": false }, { "name": "UNICEF USA", "avatars": [{ "size": 136, "image": "https://blogs-images.forbes.com/assets/images/avatars/blog-4819_136_bef01cc80e5554bcfe107d356a75ae6c.jpg" }, { "size": 40, "image": "https://blogs-images.forbes.com/assets/images/avatars/blog-4819_40_bef01cc80e5554bcfe107d356a75ae6c.jpg" }, { "size": 400, "image": "https://blogs-images.forbes.com/assets/images/avatars/blog-4819_400_bef01cc80e5554bcfe107d356a75ae6c.jpg" }, { "size": 62, "image": "https://blogs-images.forbes.com/assets/images/avatars/blog-4819_62_bef01cc80e5554bcfe107d356a75ae6c.jpg" }], "url": "http://www.forbes.com/sites/unicefusa/", "type": "AdVoice", "profileUrl": "https://blogs.forbes.com/unicefusa/profile/", "authorType": "ad", "tagName": "Children First.", "blog": false, "advoiceBrand": "UNICEF USA", "allowEmail": false }], "slug": "UNICEF USA", "blogType": "ad", "primaryChannelId": "channel_6", "hideDescription": false, "sponsored": false, "doNotPaginate": false }, "count": 0, "advoiceBrand": "nativeAd", "image": "https://thumbor.forbes.com/thumbor/64x64/filters%3Aformat%28jpg%29/https://specials-images.forbesimg.com/imageserve/5bbe745231358e59f57a53d2/0x0.jpg?&cropX1=29&cropX2=670&cropY1=72&cropY2=432", "uri": "https://www.forbes.com/sites/unicefusa/2018/10/10/teaching-technology-empowering-girls-to-change-the-world/", "title": "Teaching Technology: Empowering Girls To Change The World" }, { "content": { "naturalId": "blogAndPostId/blog/post/4251-2343", "title": "Let's Talk About Breasts, Baby", "image": "https://blogs-images.forbes.com/meggentaylor/files/2018/10/Bra-Fitting-copy-1200x871.jpg", "storyType": "post", "uri": "https://www.forbes.com/sites/meggentaylor/2018/10/18/lets-talk-about-breasts-baby/", "authors": [{ "name": "Meggen Taylor", "avatars": [{ "size": 136, "image": "http://2.gravatar.com/avatar/227032077dc9a08d146b44f6355f95a6?s=136&d=mm&r=g" }, { "size": 40, "image": "http://2.gravatar.com/avatar/227032077dc9a08d146b44f6355f95a6?s=40&d=mm&r=g" }, { "size": 400, "image": "http://2.gravatar.com/avatar/227032077dc9a08d146b44f6355f95a6?s=400&d=mm&r=g" }, { "size": 62, "image": "http://2.gravatar.com/avatar/227032077dc9a08d146b44f6355f95a6?s=62&d=mm&r=g" }], "url": "http://www.forbes.com/sites/meggentaylor/", "type": "Contributor", "profileUrl": "/sites/meggentaylor/", "authorType": "individual", "blog": false, "allowEmail": false }, { "name": "Meggen Taylor", "avatars": [{ "size": 0 }, { "size": 0 }, { "size": 0 }, { "size": 0 }], "url": "http://www.forbes.com/sites/meggentaylor/", "profileUrl": "https://blogs.forbes.com/meggentaylor/profile/", "authorType": "individual", "blog": false, "allowEmail": false }], "blogType": "individual", "primaryChannelId": "channel_81", "primaryChannel": { "id": "channel_81", "channelId": "channel_81", "channelName": "Lifestyle", "url": "/lifestyle" }, "hashtags": ["LiveLong"], "hideDescription": false, "sponsored": false, "doNotPaginate": false }, "id": "content_5bc8b7b464aaf93e2ca414a3", "title": "Let's Talk About Breasts, Baby", "count": 6387, "reason": "PV-D", "image": "https://thumbor.forbes.com/thumbor/64x64/filters%3Aformat%28jpg%29/https://blogs-images.forbes.com/meggentaylor/files/2018/10/Bra-Fitting-copy-1200x871.jpg", "naturalId": "blogAndPostId/blog/post/4251-2343", "uri": "https://www.forbes.com/sites/meggentaylor/2018/10/18/lets-talk-about-breasts-baby/", "type": "blog" }, { "content": { "naturalId": "blogAndPostId/blog/post/4747-3422", "title": "Performance Electric Car Brand Polestar Opens Swedish Headquarters", "image": "https://blogs-images.forbes.com/nargessbanks/files/2018/10/Polestar_headquarters_Gothenburg_001.jpg", "storyType": "post", "uri": "https://www.forbes.com/sites/nargessbanks/2018/10/16/polestar-opens-swedish-headquarters/", "authors": [{ "name": "Nargess Banks", "avatars": [{ "size": 136, "image": "https://secure.gravatar.com/avatar/3cfb58cf558cb1eb9a0482a7d1727203?s=136&d=mm&r=g" }, { "size": 40, "image": "https://secure.gravatar.com/avatar/3cfb58cf558cb1eb9a0482a7d1727203?s=40&d=mm&r=g" }, { "size": 400, "image": "https://secure.gravatar.com/avatar/3cfb58cf558cb1eb9a0482a7d1727203?s=400&d=mm&r=g" }, { "size": 62, "image": "https://secure.gravatar.com/avatar/3cfb58cf558cb1eb9a0482a7d1727203?s=62&d=mm&r=g" }], "url": "http://www.forbes.com/sites/nargessbanks/", "type": "Contributor", "profileUrl": "/sites/nargessbanks/", "authorType": "individual", "blog": false, "allowEmail": false }, { "name": "Nargess Banks", "avatars": [{ "size": 0 }, { "size": 0 }, { "size": 0 }, { "size": 0 }], "url": "http://www.forbes.com/sites/nargessbanks/", "profileUrl": "https://blogs.forbes.com/nargessbanks/profile/", "authorType": "individual", "blog": false, "allowEmail": false }], "blogType": "individual", "primaryChannelId": "channel_81", "primaryChannel": { "id": "channel_81", "channelId": "channel_81", "channelName": "Lifestyle", "sectionId": "section_1285", "sectionName": "Cars & Bikes", "url": "/cars-bikes/" }, "hashtags": ["UnderTheHood"], "hideDescription": false, "sponsored": false, "doNotPaginate": false }, "id": "content_5bc62cff64aaf93e2ca40c43", "title": "Performance Electric Car Brand Polestar Opens Swedish Headquarters", "count": 0, "reason": "LI", "image": "https://thumbor.forbes.com/thumbor/64x64/filters%3Aformat%28jpg%29/https://blogs-images.forbes.com/nargessbanks/files/2018/10/Polestar_headquarters_Gothenburg_001.jpg", "naturalId": "blogAndPostId/blog/post/4747-3422", "uri": "https://www.forbes.com/sites/nargessbanks/2018/10/16/polestar-opens-swedish-headquarters/", "type": "blog" }, { "content": { "naturalId": "blogAndPostId/blog/post/2040-9052", "title": "Sean John Celebrates 20 Year Anniversary With Exclusive Bloomingdale's Collaboration & Pop-Up Shop", "image": "https://blogs-images.forbes.com/josephdeacetis/files/2018/10/Diddy-Tracksuit-Image-2018.jpg", "storyType": "post", "uri": "https://www.forbes.com/sites/josephdeacetis/2018/10/16/sean-john-celebrates-20-year-anniversay-with-exclusive-bloomingdales-collaboration-pop-ip-shop/", "authors": [{ "name": "Joseph DeAcetis", "avatars": [{ "size": 136, "image": "https://blogs-images.forbes.com/josephdeacetis/files/2017/05/Joseph-DeAcetis_avatar_1493916806-136x136.jpeg" }, { "size": 40, "image": "https://blogs-images.forbes.com/josephdeacetis/files/2017/05/Joseph-DeAcetis_avatar_1493916806-40x40.jpeg" }, { "size": 400, "image": "https://blogs-images.forbes.com/josephdeacetis/files/2017/05/Joseph-DeAcetis_avatar_1493916806-400x400.jpeg" }, { "size": 62, "image": "https://blogs-images.forbes.com/josephdeacetis/files/2017/05/Joseph-DeAcetis_avatar_1493916806-62x62.jpeg" }], "url": "http://www.forbes.com/sites/josephdeacetis/", "type": "Contributor", "profileUrl": "/sites/josephdeacetis/", "authorType": "individual", "blog": false, "allowEmail": false }, { "name": "Joseph DeAcetis", "avatars": [{ "size": 136, "image": "https://blogs-images.forbes.com/assets/images/avatars/blog-2040_136_.jpg" }, { "size": 40, "image": "https://blogs-images.forbes.com/assets/images/avatars/blog-2040_40_.jpg" }, { "size": 0 }, { "size": 62, "image": "https://blogs-images.forbes.com/assets/images/avatars/blog-2040_62_.jpg" }], "url": "http://www.forbes.com/sites/josephdeacetis/", "type": "Contributor Group", "profileUrl": "https://blogs.forbes.com/josephdeacetis/profile/", "authorType": "individual", "blog": false, "allowEmail": false }], "blogType": "individual", "primaryChannelId": "channel_81", "primaryChannel": { "id": "channel_81", "channelId": "channel_81", "channelName": "Lifestyle", "sectionId": "section_1266", "sectionName": "ForbesLife", "url": "/forbeslife" }, "hashtags": ["DeLuxe"], "hideDescription": false, "sponsored": false, "doNotPaginate": false }, "id": "content_5bb4f50064aaf93e2ca3e1a4", "title": "Sean John Celebrates 20 Year Anniversary With Exclusive Bloomingdale's Collaboration & Pop-Up Shop", "count": 0, "reason": "LI", "image": "https://thumbor.forbes.com/thumbor/64x64/filters%3Aformat%28jpg%29/https://blogs-images.forbes.com/josephdeacetis/files/2018/10/Diddy-Tracksuit-Image-2018.jpg", "naturalId": "blogAndPostId/blog/post/2040-9052", "uri": "https://www.forbes.com/sites/josephdeacetis/2018/10/16/sean-john-celebrates-20-year-anniversay-with-exclusive-bloomingdales-collaboration-pop-ip-shop/", "type": "blog" }, { "content": { "naturalId": "blogAndPostId/blog/post/932-10341", "title": "Portugal's Hidden Gems: the Pousada, Palace and Monastery Hotels of the North", "image": "https://blogs-images.forbes.com/annabel/files/2018/10/44445634_903682233154085_3636028714753458176_n-1200x1183.jpg", "storyType": "post", "uri": "https://www.forbes.com/sites/annabel/2018/10/17/portugals-hidden-gems-the-pousada-palace-and-monastery-hotels-of-the-north/", "authors": [{ "name": "Ann Abel", "avatars": [{ "size": 136, "image": "https://secure.gravatar.com/avatar/91a96ac9114208fe1f34f12061bb8542?s=136&d=mm&r=g" }, { "size": 40, "image": "https://secure.gravatar.com/avatar/91a96ac9114208fe1f34f12061bb8542?s=40&d=mm&r=g" }, { "size": 400, "image": "https://secure.gravatar.com/avatar/91a96ac9114208fe1f34f12061bb8542?s=400&d=mm&r=g" }, { "size": 62, "image": "https://secure.gravatar.com/avatar/91a96ac9114208fe1f34f12061bb8542?s=62&d=mm&r=g" }], "url": "http://www.forbes.com/sites/annabel/", "type": "Contributor", "profileUrl": "/sites/annabel/", "authorType": "individual", "blog": false, "allowEmail": false }, { "name": "Ann Abel", "avatars": [{ "size": 0 }, { "size": 0 }, { "size": 0 }, { "size": 0 }], "url": "http://www.forbes.com/sites/annabel/", "profileUrl": "https://blogs.forbes.com/annabel/profile/", "authorType": "individual", "blog": false, "allowEmail": false }], "blogType": "individual", "primaryChannelId": "channel_81", "primaryChannel": { "id": "channel_81", "channelId": "channel_81", "channelName": "Lifestyle", "sectionId": "section_1267", "sectionName": "Travel", "url": "/travel" }, "hashtags": ["Wanderlust"], "hideDescription": false, "sponsored": false, "doNotPaginate": false }, "id": "content_5bc70d6f64aaf93e2ca40e7b", "title": "Portugal's Hidden Gems: the Pousada, Palace and Monastery Hotels of the North", "count": 0, "reason": "TW", "image": "https://thumbor.forbes.com/thumbor/64x64/filters%3Aformat%28jpg%29/https://blogs-images.forbes.com/annabel/files/2018/10/44445634_903682233154085_3636028714753458176_n-1200x1183.jpg", "naturalId": "blogAndPostId/blog/post/932-10341", "uri": "https://www.forbes.com/sites/annabel/2018/10/17/portugals-hidden-gems-the-pousada-palace-and-monastery-hotels-of-the-north/", "type": "blog" }], "bucket": "A", "adZone": "article-d-prem", "isProd": true, "isE2E": false }</script>
-
-
-
-
-
-	<script type="text/javascript" id="">(function () { function c(b) { var a = window.QSI; a && a.API && (a.API.unload(), setTimeout(function () { a.API.load().done(a.API.run) }, 2E4)) } window.addEventListener("qsi_js_loaded", c, !1); var b = window.addEventListener ? "addEventListener" : "attachEvent", d = window[b]; b = "attachEvent" == b ? "onmessage" : "message"; d(b, function (b) { try { var a = JSON.parse(b.data); if (a.QSI_AID) { var c = a.QSI_AID; localStorage.setItem(c, "Exposed") } } catch (e) { } }, !1) })();</script>
-
-
-	<script type="text/javascript" id="">if (window.uabfunc && window.uabfunc.detected) { var dataLayer = window.dataLayer || []; dataLayer.push({ event: "analyticsEvent", "event category": "Adblock", "event action": "Reclaimed", "event label": "Untouchable" }) };</script>
-
-
-	$(".tweet-this .tweet_quote a").on("click.tracking", function () { dataLayer.push({ event: "templateAreaClick", "event
-	category": "Template Area Interaction", "event action": "Click", "event label": "Tweet This click" });
-	bk_clickEvent("tweet") }); $(".article-vp-wrapper .icon-chevron-right").on("click.tracking", function () {
-	dataLayer.push({ event: "templateAreaClick", "event category": "Template Area Interaction", "event action": "Click",
-	"event label": "VestBelt Arrow Click Next" }) });
-	$(".entity-bio-trigger").on("click.tracking", function () {
-	$("*").unbind("click.tracking.bio"); $(".popular-posts").on("click.tracking.bio", function () {
-	dataLayer.push({ event: "templateAreaClick", "event category": "Template Area Interaction", "event action": "Click",
-	"event label": "Writer Block Popular Posts Click" }); $(".entity-popular-posts a").unbind("click.tracking.bio");
-	$(".entity-popular-posts a").on("click.tracking.bio", function () {
-	dataLayer.push({
-	event: "templateAreaClick", "event category": "Template Area Interaction",
-	"event action": "Click", "event label": "Writer Block Popular Posts Links"
-	})
-	})
-	}); $(".recent-posts").on("click.tracking.bio", function () {
-	dataLayer.push({ event: "templateAreaClick", "event category": "Template Area Interaction", "event action": "Click",
-	"event label": "Writer Block Recent Posts Click" }); $(".entity-recent-posts a").unbind("click.tracking.bio");
-	$(".entity-recent-posts a").on("click.tracking.bio", function () {
-	dataLayer.push({
-	event: "templateAreaClick", "event category": "Template Area Interaction", "event action": "Click",
-	"event label": "Writer Block Recent Posts Links"
-	})
-	})
-	})
-	}); $(".more-link").on("click.tracking", function () { dataLayer.push({ event: "templateAreaClick", "event category":
-	"Template Area Interaction", "event action": "Click", "event label": "Trending on Forbes Article Link" }) });
-	$(".article-author").on("click.tracking", function () { dataLayer.push({ event: "templateAreaClick", "event category":
-	"Template Area Interaction", "event action": "Click", "event label": "Trending on Forbes Writer Link" }) });
-	$(".comments-link").on("click.tracking", function () { dataLayer.push({ event: "templateAreaClick", "event category":
-	"Template Area Interaction", "event action": "Click", "event label": "Comment This Story Click" }) });
-	$(".contrib-image").on("click.tracking", function () { dataLayer.push({ event: "templateAreaClick", "event category":
-	"Template Area Interaction", "event action": "Click", "event label": "Gravatar Link" }) });
-	$(".vp-slick-slider .slick-slide").on("click.tracking", function () { dataLayer.push({ event: "templateAreaClick",
-	"event category": "Template Area Interaction", "event action": "Click", "event label": "Vest Belt " +
-	($(this).data("slick-index") ? $(this).data("slick-index") + 1 : 1) + " Click" }) });
-	if (google_tag_manager["GTM-NMQJM4"].macro(72)) $(".article-expand-wrapper .expand-button").on("click.tracking",
-	function () { dataLayer.push({ event: "templateAreaClick", "event category": "Template Area Interaction", "event
-	action": "Click", "event label": "Continue Reading" }) }), $(".article-sidebar .menu").on("click.tracking", function
-	() {
-	dataLayer.push({ event: "templateAreaClick", "event category": "Template Area Interaction", "event action": "Click",
-	"event label": "Hamburger Icon" }); $("*").unbind("click.tracking.hamburger"); window.setTimeout(function () {
-	$(".channels-list .channel-header").on("click.tracking.hamburger",
-	function () { dataLayer.push({ event: "templateAreaClick", "event category": "Template Area Interaction", "event
-	action": "Click", "event label": "Channel Heading Link Nav" }) }); $(".subchannel a").on("click.tracking.hamburger",
-	function () { "channel-promo-link" === $(this).attr("data-track") && dataLayer.push({ event: "templateAreaClick",
-	"event category": "Template Area Interaction", "event action": "Click", "event label": "Channel Promo Link" }) });
-	$(".promoted-slider .slick-slide").on("click.tracking.hamburger", function () {
-	dataLayer.push({
-	event: "templateAreaClick",
-	"event category": "Template Area Interaction", "event action": "Click", "event label": "Promo " +
-	($(this).data("slick-index") ? $(this).data("slick-index") + 1 : 1)
-	})
-	}); $(".footer-list li .channel-header").on("click.tracking.hamburger", function () { "footer-subnav-hide" ===
-	$(this).attr("data-track") && dataLayer.push({ event: "templateAreaClick", "event category": "Template Area
-	Interaction", "event action": "Click", "event label": "Footer Topic Arrows" }) })
-	}, 500)
-	}), $(".article-sidebar .close-panel").on("click.tracking", function () {
-	dataLayer.push({
-	event: "templateAreaClick",
-	"event category": "Template Area Interaction", "event action": "Click", "event label": "Hamburger X Close"
-	}); $("*").unbind("click.tracking.hamburger")
-	}), $(".article-fbs-sharing .chat .button").on("click.tracking", function () { dataLayer.push({ event:
-	"templateAreaClick", "event category": "Template Area Interaction", "event action": "Click", "event label": "SMS
-	Click" }) }); else $(".utility-item.menu i").on("click.tracking", function () {
-	"hamburger" === $(this).attr("data-track") ? (dataLayer.push({
-	event: "templateAreaClick",
-	"event category": "Template Area Interaction", "event action": "Click", "event label": "Hamburger Icon"
-	}), $("*").unbind("click.tracking.hamburger"), window.setTimeout(function () {
-	$(".channels-list .channel-header a").on("click.tracking.hamburger", function () { dataLayer.push({ event:
-	"templateAreaClick", "event category": "Template Area Interaction", "event action": "Click", "event label": "Channel
-	Heading Link Nav" }) }); $(".subchannel a").on("click.tracking.hamburger", function () {
-	"channel-promo-link" === $(this).attr("data-track") &&
-	dataLayer.push({ event: "templateAreaClick", "event category": "Template Area Interaction", "event action": "Click",
-	"event label": "Channel Promo Link" })
-	}); $(".promoted-slider .slick-slide").on("click.tracking.hamburger", function () { dataLayer.push({ event:
-	"templateAreaClick", "event category": "Template Area Interaction", "event action": "Click", "event label": "Promo " +
-	($(this).data("slick-index") ? $(this).data("slick-index") + 1 : 1) }) }); $(".channels-list
-	.icon-chevron-down").on("click.tracking.hamburger", function () {
-	"channel-reveal" ===
-	$(this).attr("data-track") && dataLayer.push({ event: "templateAreaClick", "event category": "Template Area
-	Interaction", "event action": "Click", "event label": "Channel Arrow" })
-	}); $(".footer-channels-list .icon-chevron-down").on("click.tracking.hamburger", function () { "footer-subnav-reveal"
-	=== $(this).attr("data-track") && dataLayer.push({ event: "templateAreaClick", "event category": "Template Area
-	Interaction", "event action": "Click", "event label": "Footer Topic Arrows" }) })
-	}, 500)) : "hamburger-close" === $(this).attr("data-track") &&
-	(dataLayer.push({ event: "templateAreaClick", "event category": "Template Area Interaction", "event action": "Click",
-	"event label": "Hamburger X Close" }), $("*").unbind("click.tracking.hamburger"))
-	}); $(".article-fbs-sharing .icon-email").on("click.tracking", function () { dataLayer.push({ event:
-	"templateAreaClick", "event category": "Template Area Interaction", "event action": "Click", "event label": "Email
-	Click" }); bk_clickEvent("email") });
-	$(".article-fbs-sharing .facebook .button").on("click.tracking", function () { dataLayer.push({ event:
-	"templateAreaClick", "event category": "Template Area Interaction", "event action": "Click", "event label": "Facebook
-	Click" }); bk_clickEvent("facebook") }); $(".article-fbs-sharing .google .button").on("click.tracking", function () {
-	dataLayer.push({ event: "templateAreaClick", "event category": "Template Area Interaction", "event action": "Click",
-	"event label": "Google Plus Click" }); bk_clickEvent("google+") });
-	$(".article-fbs-sharing .linkedin .button").on("click.tracking", function () { dataLayer.push({ event:
-	"templateAreaClick", "event category": "Template Area Interaction", "event action": "Click", "event label": "Linkedin
-	Click" }); bk_clickEvent("linkedin") }); $(".article-fbs-sharing .twitter .button").on("click.tracking", function () {
-	dataLayer.push({ event: "templateAreaClick", "event category": "Template Area Interaction", "event action": "Click",
-	"event label": "Twitter Click" }); bk_clickEvent("twitter") });
-	$(".article-fbs-sharing .permalink .input-permalink").on("click.tracking", function () { dataLayer.push({ event:
-	"templateAreaClick", "event category": "Template Area Interaction", "event action": "Click", "event label": "URL
-	Click" }) }); $(".icon-user").on("click.tracking", function () { dataLayer.push({ event: "templateAreaClick", "event
-	category": "Template Area Interaction", "event action": "Click", "event label": "Log In Gear" }) });
-	$(".trending-now").on("click.tracking", function () { dataLayer.push({ event: "templateAreaClick", "event category":
-	"Template Area Interaction", "event action": "Click", "event label": "Popular Box" }); $(".article-sidebar-trending
-	.link").unbind("click.tracking.trending"); $(".article-sidebar-trending .link").on("click.tracking.trending", function
-	() { dataLayer.push({ event: "templateAreaClick", "event category": "Template Area Interaction", "event action":
-	"Click", "event label": "Trending Now Posts" }) }) });
-	$(".search").on("click.tracking", function () { dataLayer.push({ event: "templateAreaClick", "event category":
-	"Template Area Interaction", "event action": "Click", "event label": "Search Icon" }) });
-	$(".search-input").on("click.tracking", function () { dataLayer.push({ event: "templateAreaClick", "event category":
-	"Template Area Interaction", "event action": "Click", "event label": "Search Bar Engagement" }) });
-	$(".contrib-preview").on("click.tracking", function () { dataLayer.push({ event: "templateAreaClick", "event
-	category": "Template Area Interaction", "event action": "Click", "event label": "contrib-preview" }) });
-	$(".contrib-preview").on("click.tracking", function () { dataLayer.push({ event: "templateAreaClick", "event
-	category": "Template Area Interaction", "event action": "Click", "event label": "contrib-group ng-scope" }) });
-	$(".vp-slick-slider").on("click.tracking", function () { dataLayer.push({ event: "templateAreaClick", "event
-	category": "Template Area Interaction", "event action": "Click", "event label": "vp-slick-slider slick-initialized
-	slick-slider" }) }); $(".utility-item-login").on("click.tracking", function () { dataLayer.push({ event:
-	"templateAreaClick", "event category": "Template Area Interaction", "event action": "Click", "event label": "Log In"
-	}) });
-	$(".article-sidebar-trending .items .link").on("click.tracking", function () { dataLayer.push({ event:
-	"templateAreaClick", "event category": "Template Area Interaction", "event action": "Click", "event label": "Headline
-	" + ($(".article-sidebar-trending .items .link").index($(this)) + 1) }) }); $(".hashtag").on("click.tracking",
-	function () { dataLayer.push({ event: "templateAreaClick", "event category": "Template Area Interaction", "event
-	action": "Click", "event label": "Hashtag Click" }) });
-	$(".article-image-box").on("click.tracking", function () { dataLayer.push({ event: "templateAreaClick", "event
-	category": "Template Area Interaction", "event action": "Click", "event label": "Gallery Embed Article Click" }) });</script>
 
 
 	<script>
@@ -1385,8 +587,10 @@
 		main.addEventListener('click', function (event) {
 			event.preventDefault();
 			event.stopPropagation();
+			document.querySelector('#darken').classList.toggle("on");
+			document.querySelector('#contentArticle').classList.toggle("doBlur");
 			document.querySelector('.z-main-wrapper').classList.toggle("on");
-			document.querySelector('#contentArticle').classList.toggle("on");
+			//document.querySelector('#contentArticle').classList.toggle("on");
 
 			return false;
 		});
