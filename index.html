@@ -5429,7 +5429,7 @@
           }
 
           .doBlur {
-            filter: blur(5px);
+            filter: blur(3px);
           }
 
           #ZCMZ-564325>iframe {
@@ -5479,15 +5479,25 @@
           }
 
           .close {
-            position: absolute;
-            left: 4px;
-            top: 4px;
+            position: relative;
+            right: 0;
+            top: 7px;
             z-index: 999;
-            width: 50%
+            float: right;
+            /* width: 50% */
+            left: 51%;
+            position: absolute;
+            transform: translateX(-50%);
+          }
+
+          #zclose {
+            margin-bottom: 5px;
+            width: 300px;
           }
 
           #zclose2 {
             margin-bottom: 5px;
+            width: 320px;
           }
 
           .box {
@@ -5570,6 +5580,7 @@
             height: 40px;
             padding: 6px;
             padding-left: 0;
+            float: left;
           }
 
           .z-main-wrapper2 .box {
@@ -5677,6 +5688,7 @@
 
           #ZCMZ-666>iframe {
             width: 100% !important;
+            height: 100vh !important;
           }
 
           /* end */
@@ -5700,7 +5712,9 @@
             display: block;
           }
         </style>
-
+        <style>
+          /* xfinity ipad help */
+        </style>
 
       </div>
     </div>
@@ -5709,6 +5723,13 @@
         <a class="z-main__link">
 
           <div id="ZCMZ-564325">
+            <a id="zclose" class="close" href="#">
+              <div class="box box2" style="float:right; margin-right:10px;">
+                <svg viewbox="0 0 40 40">
+                  <path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
+                </svg>
+              </div>
+            </a>
             <script>
               (function () {
                 var c = document.getElementById('ZCMZ-564325'),
@@ -5721,7 +5742,7 @@
                   s.src = 'https://cdn-prototype.microsites.partnersite.mobi/charlesschwab/mz/cmz.js?cb=' + Date.now();
                   s.onload = function () {
                     ifr.contentWindow.zcmz_lbs('ZCMZ-564325', 'https://cdn-prototype.microsites.partnersite.mobi/charlesschwab/retirementplanning.html#charlesschwab/retirementplanning', 300, 600, {
-
+                      mode: 'interstitial'
                     });
                   };
                   ifr.contentWindow.document.body.appendChild(s);
@@ -5736,20 +5757,20 @@
 
       <!--number 2-->
       <!-- <a href="#" class="close" id="zclose"></a> -->
-      <a id="zclose" class="close" href="#">
+      <!-- <a id="zclose" class="close" href="#">
         <div class="box box2">
           <svg viewbox="0 0 40 40">
             <path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
           </svg>
         </div>
-      </a>
+      </a> -->
 
 
       <!--fixed example-->
       <div class='z-main-wrapper2'>
         <section class="z-main2" style="height: 520px;">
-          <a id="zclose2" class="close" href="#">
-            <div class="box box2">
+          <a id="zclose2" class="close" href="#" style="top:0;">
+            <div class="box box2" style="float:right; margin-right:6px;">
               <svg viewbox="0 0 40 40">
                 <path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
               </svg>
@@ -5766,9 +5787,10 @@
                   ifrs.padding = ifrs.margin = ifrs.borderWidth = '0';
                   ifr.onload = function () {
                     var s = ifr.contentWindow.document.createElement('script');
-                    s.src = 'https://cdn.microsites.partnersite.mobi/corning/mzv2/cmz.js?cb=' + Date.now();
+                    s.src = 'https://cdn-prototype.microsites.partnersite.mobi/corning/mzv2/cmz.js?cb=' + Date.now();
                     s.onload = function () {
-                      ifr.contentWindow.zcmz_lbs('ZCMZ-555555', 'https://cdn.microsites.partnersite.mobi/corning/gorilla-glass-v2.html#corning/gorilla-glass-v2', 320, 480, {
+                      ifr.contentWindow.zcmz_lbs('ZCMZ-555555', 'https://cdn-prototype.microsites.partnersite.mobi/corning/gorilla-glass-v2.html#corning/gorilla-glass-v2', 320, 480, {
+                        mode: 'interstitial',
                         cta_hero: 'http://zumobi.go2cloud.org/aff_c?offer_id=149&aff_id=1001&url_id=943&aff_sub=%%TTD_SITE%%&aff_sub2=%%TTD_SUPPLYVENDOR%%&aff_sub3=%%TTD_ADGROUPID%%&aff_sub4=%%TTD_CREATIVEID%%',
                         cta_blog: 'http://zumobi.go2cloud.org/aff_c?offer_id=149&aff_id=1001&url_id=939&aff_sub=%%TTD_SITE%%&aff_sub2=%%TTD_SUPPLYVENDOR%%&aff_sub3=%%TTD_ADGROUPID%%&aff_sub4=%%TTD_CREATIVEID%%',
                         cta_blog_two: 'http://zumobi.go2cloud.org/aff_c?offer_id=149&aff_id=1001&url_id=949&aff_sub=%%TTD_SITE%%&aff_sub2=%%TTD_SUPPLYVENDOR%%&aff_sub3=%%TTD_ADGROUPID%%&aff_sub4=%%TTD_CREATIVEID%%',
@@ -5796,18 +5818,19 @@
 
       <div class='z-main-wrapper3'>
 
-        <a id="zclose3" class="close" style="z-index: 5; width: 100%; padding:0; background:black" href="#">
-          <div class="box box2" style="margin-right:10px; width:20px; float:right; border:3px solid white">
-            <svg viewbox="0 0 40 40">
-              <path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
-            </svg>
-          </div>
-        </a>
 
-        <section class="z-main3" style="height: 999px; top:25px">
+
+        <section class="z-main3" style="height: 100vh; top:0px">
 
           <a class="z-main__link">
             <div id="ZCMZ-666">
+              <a id="zclose3" class="close" style="margin-top: 5px; z-index: 5; width: 100%; padding:0; " href="#">
+                <div class="box box2" style="margin-right:15px; width:20px; float:right; border:3px solid white">
+                  <svg viewbox="0 0 40 40">
+                    <path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
+                  </svg>
+                </div>
+              </a>
               <script>
                   (function () {
                     var c = document.getElementById('ZCMZ-666'),
@@ -5819,7 +5842,8 @@
                       var s = ifr.contentWindow.document.createElement('script');
                       s.src = 'https://cdn-prototype.microsites.partnersite.mobi/xfinity/3-1/cmz.js?cb=' + Date.now();
                       s.onload = function () {
-                        ifr.contentWindow.zcmz_lbs('ZCMZ-666', 'https://cdn-prototype.microsites.partnersite.mobi/xfinity/home-security-31.html#xfinity/home-security-31', 768, 999, {
+                        ifr.contentWindow.zcmz_lbs('ZCMZ-666', 'https://cdn-prototype.microsites.partnersite.mobi/xfinity/home-security-31.html#xfinity/home-security-31', 768, 1024, {
+                          mode: 'interstitial',
                           cta_hero: 'http://zumobi.go2cloud.org/aff_c?offer_id=149&aff_id=1001&url_id=943&aff_sub=%%TTD_SITE%%&aff_sub2=%%TTD_SUPPLYVENDOR%%&aff_sub3=%%TTD_ADGROUPID%%&aff_sub4=%%TTD_CREATIVEID%%',
                           cta_blog: 'http://zumobi.go2cloud.org/aff_c?offer_id=149&aff_id=1001&url_id=939&aff_sub=%%TTD_SITE%%&aff_sub2=%%TTD_SUPPLYVENDOR%%&aff_sub3=%%TTD_ADGROUPID%%&aff_sub4=%%TTD_CREATIVEID%%',
                           cta_blog_two: 'http://zumobi.go2cloud.org/aff_c?offer_id=149&aff_id=1001&url_id=949&aff_sub=%%TTD_SITE%%&aff_sub2=%%TTD_SUPPLYVENDOR%%&aff_sub3=%%TTD_ADGROUPID%%&aff_sub4=%%TTD_CREATIVEID%%',

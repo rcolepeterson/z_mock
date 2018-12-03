@@ -416,8 +416,8 @@
 								var s = ifr.contentWindow.document.createElement('script');
 								s.src = 'https://cdn-prototype.microsites.partnersite.mobi/hannaford/3-1/cmz.js?cb=' + Date.now();
 								s.onload = function () {
-									ifr.contentWindow.zcmz_lbs('ZCMZ-564325', 'http://cdn-prototype.microsites.partnersite.mobi/hannaford/hannaford.html#hannaford/hannaford', 768, 1024, {
-
+									ifr.contentWindow.zcmz_lbs('ZCMZ-564325', 'https://cdn-prototype.microsites.partnersite.mobi/hannaford/hannaford.html#hannaford/hannaford', 768, 1024, {
+										mode: 'interstitial'
 									});
 								};
 								ifr.contentWindow.document.body.appendChild(s);

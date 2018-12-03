@@ -140,7 +140,7 @@
 		}
 
 		.logo-header {
-			z-index: 999999999;
+			z-index: 100;
 		}
 
 		.mylogo {
@@ -261,6 +261,11 @@
 			transform: translateX(-50%);
 		}
 
+		#ZCMZ-564325>iframe {
+			width: 100% !important;
+			height: 100vh !important;
+		}
+
 		/* // custom close btn */
 		.close {
 			position: absolute;
@@ -308,7 +313,7 @@
 
 		#ZCMZ-564325>iframe {
 			width: 100% !important;
-			top: 48px;
+			top: 0px;
 		}
 	</style>
 
@@ -405,6 +410,13 @@
 			</a> -->
 			<a class="z-main__link">
 				<div id="ZCMZ-564325">
+					<a id="zclose3" class="close" style="margin-top: -24px; z-index: 5; width: 100%; padding:0; " href="#">
+						<div class="box box2" style="margin-right:10px; width:20px; float:right; border:3px solid white">
+							<svg viewbox="0 0 40 40">
+								<path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
+							</svg>
+						</div>
+					</a>
 					<script>
 						(function () {
 							var c = document.getElementById('ZCMZ-564325'),
@@ -417,6 +429,7 @@
 								s.src = 'https://cdn-prototype.microsites.partnersite.mobi/xfinity/3-1/cmz.js?cb=' + Date.now();
 								s.onload = function () {
 									ifr.contentWindow.zcmz_lbs('ZCMZ-564325', 'https://cdn-prototype.microsites.partnersite.mobi/xfinity/home-security-31.html#xfinity/home-security-31', 768, 1024, {
+										mode: 'interstitial',
 										cta_hero: 'http://zumobi.go2cloud.org/aff_c?offer_id=149&aff_id=1001&url_id=943&aff_sub=%%TTD_SITE%%&aff_sub2=%%TTD_SUPPLYVENDOR%%&aff_sub3=%%TTD_ADGROUPID%%&aff_sub4=%%TTD_CREATIVEID%%',
 										cta_blog: 'http://zumobi.go2cloud.org/aff_c?offer_id=149&aff_id=1001&url_id=939&aff_sub=%%TTD_SITE%%&aff_sub2=%%TTD_SUPPLYVENDOR%%&aff_sub3=%%TTD_ADGROUPID%%&aff_sub4=%%TTD_CREATIVEID%%',
 										cta_blog_two: 'http://zumobi.go2cloud.org/aff_c?offer_id=149&aff_id=1001&url_id=949&aff_sub=%%TTD_SITE%%&aff_sub2=%%TTD_SUPPLYVENDOR%%&aff_sub3=%%TTD_ADGROUPID%%&aff_sub4=%%TTD_CREATIVEID%%',
@@ -624,6 +637,15 @@
 		});
 
 		console.log(backButton);
+
+		var zclose3 = document.querySelector('#zclose3');
+		zclose3.addEventListener('click', function (event) {
+			//document.querySelector('.z-main-wrapper').classList.toggle("on");
+			event.preventDefault();
+			event.stopPropagation();
+			window.open("./index.html", "_self")
+			//document.querySelector('.z-main-wrapper2').classList.toggle("on");
+		});
 
 	</script>
 
