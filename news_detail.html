@@ -280,6 +280,8 @@
 			height: 30px;
 			padding: 6px;
 			padding-left: 0;
+			transform: translateX(-50%);
+			left: 50%;
 		}
 
 		.box {
@@ -418,14 +420,20 @@
 	<div class='z-main-wrapper'>
 
 		<section class="z-main" style="height: 580px;">
-			<a id="zclose" class="close" href="#">
+			<!-- <a id="zclose" class="close" href="#">
 				<div class="box box2">
 					<svg viewbox="0 0 40 40">
 						<path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
 					</svg>
 				</div>
+			</a> -->
+			<a id="zclose" class="close" href="#" style="top:12px; position:absolute;">
+				<div class="box box2" style="float:right; margin-right:6px;">
+					<svg viewbox="0 0 40 40">
+						<path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
+					</svg>
+				</div>
 			</a>
-
 
 
 			<a class="z-main__link">
@@ -439,9 +447,9 @@
 							ifrs.padding = ifrs.margin = ifrs.borderWidth = '0';
 							ifr.onload = function () {
 								var s = ifr.contentWindow.document.createElement('script');
-								s.src = 'https://cdn-prototype.microsites.partnersite.mobi/corning/mzv2/cmz.js?cb=' + Date.now();
+								s.src = 'https://demo.microzines.com/corning/mzv2/cmz.js?cb=' + Date.now();
 								s.onload = function () {
-									ifr.contentWindow.zcmz_lbs('ZCMZ-564325', 'https://cdn-prototype.microsites.partnersite.mobi/corning/gorilla-glass-v2.html#corning/gorilla-glass-v2', 320, 480, {
+									ifr.contentWindow.zcmz_lbs('ZCMZ-564325', 'https://demo.microzines.com/corning/gorilla-glass-v2.html#corning/gorilla-glass-v2', 320, 480, {
 										mode: 'interstitial',
 										cta_hero: 'http://zumobi.go2cloud.org/aff_c?offer_id=149&aff_id=1001&url_id=943&aff_sub=%%TTD_SITE%%&aff_sub2=%%TTD_SUPPLYVENDOR%%&aff_sub3=%%TTD_ADGROUPID%%&aff_sub4=%%TTD_CREATIVEID%%',
 										cta_blog: 'http://zumobi.go2cloud.org/aff_c?offer_id=149&aff_id=1001&url_id=939&aff_sub=%%TTD_SITE%%&aff_sub2=%%TTD_SUPPLYVENDOR%%&aff_sub3=%%TTD_ADGROUPID%%&aff_sub4=%%TTD_CREATIVEID%%',
@@ -576,6 +584,14 @@
 		// btn.addEventListener('click', function () {
 		// 	document.querySelector('.z-main-wrapper').classList.toggle("on");
 		// });
+
+		var topButton = document.querySelector('#top');
+		topButton.addEventListener('click', function (event) {
+			console.log("do it");
+			event.preventDefault();
+			event.stopPropagation();
+			window.open("./index.html", "_self")
+		});
 
 
 		var backButton = document.querySelector('#backButton');

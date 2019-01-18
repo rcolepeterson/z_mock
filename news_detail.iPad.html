@@ -590,6 +590,23 @@
 
 	<script>
 
+		var topButton = document.querySelector('#top');
+		topButton.addEventListener('click', function (event) {
+			console.log("do it");
+			event.preventDefault();
+			event.stopPropagation();
+			window.open("./index.html", "_self")
+		});
+
+
+		var backButton = document.querySelector('#backButton');
+		backButton.addEventListener('click', function (event) {
+			console.log("do it");
+			event.preventDefault();
+			event.stopPropagation();
+			window.open("./index.html", "_self")
+		});
+
 		// var btn = document.querySelector('.header__nav');
 		// btn.addEventListener('click', function () {
 		// 	document.querySelector('.z-main-wrapper').classList.toggle("on");
@@ -614,15 +631,9 @@
 		// });
 
 
-		var backButton = document.querySelector('#backButton');
-		backButton.addEventListener('click', function (event) {
-			console.log("do it");
-			event.preventDefault();
-			event.stopPropagation();
-			window.open("./index.html", "_self")
-		});
 
-		console.log(backButton);
+
+
 
 	</script>
 
