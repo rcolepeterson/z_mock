@@ -4540,7 +4540,7 @@
 	<div class="main-content main-content--universal-header">
 		<header class="header" role="banner">
 			<div id="backButton">
-				<a href="#">
+				<a href="./index.html">
 					<span class="left"></span>
 				</a>
 			</div>
@@ -5923,14 +5923,14 @@
 						z-index: 999999;
 					}
 
-					a {
+					#backButton a {
 						display: inline-block;
 						border-radius: 50%;
 					}
 
 
 
-					.left {
+					#backButton .left {
 						display: inline-block;
 						margin-top: 6px;
 						width: 35px;
@@ -5940,7 +5940,7 @@
 						/* margin-right: 1.5em; */
 					}
 
-					.left:after {
+					#backButton .left:after {
 						content: '';
 						display: inline-block;
 						margin-top: 6px;
@@ -6711,13 +6711,7 @@ Global Finance Leader Study: Unlock the Power of Advanced Analytics by Combining
 	<script>
 
 
-		var backButton = document.querySelector('#backButton');
-		backButton.addEventListener('click', function (event) {
-			console.log("do it");
-			event.preventDefault();
-			event.stopPropagation();
-			window.open("./index.html", "_self")
-		});
+
 
 
 	</script>
