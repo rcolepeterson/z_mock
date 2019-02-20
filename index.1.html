@@ -583,7 +583,7 @@
 
     @media (max-width:1024px) {
       .fs-content {
-        margin: 0 67px
+        margin: 0 30px
       }
     }
 
@@ -2281,8 +2281,9 @@
       padding-left: 3%
     }
 
+    /* here */
     .channel--left .channel__divider {
-      right: 31.8%
+      right: 34%
     }
 
     .channel--right .card--large,
@@ -2295,6 +2296,7 @@
       padding-right: 3%
     }
 
+    /* here */
     .channel--right .channel__divider {
       left: 31.8%
     }
@@ -2303,12 +2305,12 @@
     .channel--left .channel__columns,
     .channel--right .card--large,
     .channel--right .channel__columns {
-      width: 66.66%
+      width: 64%
     }
 
     .channel--left .channel__sidebar,
     .channel--right .channel__sidebar {
-      width: 33.33%
+      width: 37%;
     }
 
     .channel--left .channel__divider,
@@ -2516,7 +2518,7 @@
       display: none
     }
 
-    @media (max-width:768px) {
+    @media (max-width:480px) {
       .channel__header {
         margin-bottom: 24px;
         padding: 16px
@@ -4306,7 +4308,7 @@
 
     @media (max-width:1024px) {
       .data-viz__item {
-        height: 90px
+        /* height: 90px */
       }
 
       .data-viz__title {
@@ -5824,10 +5826,27 @@
           }
 
           #example4 {
+            margin: 0 auto;
             margin-top: 20px;
           }
 
           @media (min-width:768px) {
+
+            /* zumobi */
+            .channel--left .card--large,
+            #row-0>div.channel__content>div.channel__columns {
+              width: 51%;
+            }
+
+            #row-0>div.channel__content>div.channel__sidebar.channel__sidebar--editors-pick {
+              width: 46%;
+            }
+
+            /* here */
+            .channel--left .channel__divider {
+              right: 45.8%;
+            }
+
             #example4 {
               margin-top: 0;
               margin-bottom: 40px;
@@ -5840,28 +5859,58 @@
             }
           }
 
+          @media (min-width:1024px) {
+
+            .channel--left .card--large,
+            #row-0>div.channel__content>div.channel__columns {
+              width: 60%;
+            }
+
+            #row-0>div.channel__content>div.channel__sidebar.channel__sidebar--editors-pick {
+              width: 36%;
+            }
+
+            /* here */
+            .channel--left .channel__divider {
+              right: 35.8%;
+            }
+          }
+
+          @media (min-width:1200px) {
+
+            /* here */
+            .channel--left .channel__divider {
+              right: 34.8%;
+              display: none;
+            }
+          }
 
 
           /* end */
         </style>
 
         <style>
-          #darken {
-            z-index: 3;
-            height: 100%;
-            width: 100%;
-            position: fixed;
-            overflow: auto;
-            top: 0px;
-            left: 0px;
-            background: rgba(0, 0, 0, 0.7);
-            display: none;
-            /*can be anything, of course*/
-          }
+          @media (max-width: 480px) {
 
-          #darken.on {
-            display: block;
-          }
+            .channel--left .channel__sidebar,
+            .channel--right .channel__sidebar {
+              padding: 0 10px;
+            }
+
+            #row-3>div.channel__content>div.channel__sidebar.btn {
+              padding: 0 20px;
+            }
+
+            @media (max-width: 320px) {
+
+              .channel--left .channel__sidebar,
+              .channel--right .channel__sidebar {
+                padding: 0 0px;
+              }
+
+              #row-3>div.channel__content>div.channel__sidebar.btn {
+                padding: 0 10px;
+              }
         </style>
         <style>
           /* xfinity ipad help */
@@ -5871,149 +5920,7 @@
     </div>
     <div class='z-main-wrapper'>
       <section class="z-main" style="height: 620px;">
-        <a class="z-main__link">
-
-          <div id="ZCMZ-564325">
-            <a id="zclose" class="close" href="#">
-              <div class="box box2" style="float:right; margin-right:10px;">
-                <svg viewbox="0 0 40 40">
-                  <path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
-                </svg>
-              </div>
-            </a>
-            <script>
-              (function () {
-                var c = document.getElementById('ZCMZ-564325'),
-                  ifr = document.createElement('iframe'),
-                  ifrs = ifr.style;
-                ifr.setAttribute('scrolling', 'no');
-                ifrs.padding = ifrs.margin = ifrs.borderWidth = '0';
-                ifr.onload = function () {
-                  var s = ifr.contentWindow.document.createElement('script');
-                  s.src = 'https://demo.microzines.com/charlesschwab/mz/cmz.js?cb=' + Date.now();
-                  s.onload = function () {
-                    ifr.contentWindow.zcmz_lbs('ZCMZ-564325', 'https://demo.microzines.com/charlesschwab/retirementplanning.html#charlesschwab/retirementplanning', 300, 600, {
-                      mode: 'interstitial'
-                    });
-                  };
-                  ifr.contentWindow.document.body.appendChild(s);
-                };
-                c.appendChild(ifr);
-              })()
-            </script>
-          </div>
-        </a>
-
       </section>
-
-      <!--number 2-->
-      <!-- <a href="#" class="close" id="zclose"></a> -->
-      <!-- <a id="zclose" class="close" href="#">
-        <div class="box box2">
-          <svg viewbox="0 0 40 40">
-            <path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
-          </svg>
-        </div>
-      </a> -->
-
-
-      <!--fixed example-->
-      <div class='z-main-wrapper2'>
-        <section class="z-main2" style="height: 520px;">
-          <a id="zclose2" class="close" href="#" style="top:0;">
-            <div class="box box2" style="float:right; margin-right:6px;">
-              <svg viewbox="0 0 40 40">
-                <path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
-              </svg>
-            </div>
-          </a>
-          <a class="z-main__link">
-            <div id="ZCMZ-555555">
-              <script>
-                (function () {
-                  var c = document.getElementById('ZCMZ-555555'),
-                    ifr = document.createElement('iframe'),
-                    ifrs = ifr.style;
-                  ifr.setAttribute('scrolling', 'no');
-                  ifrs.padding = ifrs.margin = ifrs.borderWidth = '0';
-                  ifr.onload = function () {
-                    var s = ifr.contentWindow.document.createElement('script');
-                    s.src = 'https://demo.microzines.com/corning/mzv2/cmz.js?cb=' + Date.now();
-                    s.onload = function () {
-                      ifr.contentWindow.zcmz_lbs('ZCMZ-555555', 'https://demo.microzines.com/corning/gorilla-glass-v2.html#corning/gorilla-glass-v2', 320, 480, {
-                        mode: 'interstitial',
-                        cta_hero: 'http://zumobi.go2cloud.org/aff_c?offer_id=149&aff_id=1001&url_id=943&aff_sub=%%TTD_SITE%%&aff_sub2=%%TTD_SUPPLYVENDOR%%&aff_sub3=%%TTD_ADGROUPID%%&aff_sub4=%%TTD_CREATIVEID%%',
-                        cta_blog: 'http://zumobi.go2cloud.org/aff_c?offer_id=149&aff_id=1001&url_id=939&aff_sub=%%TTD_SITE%%&aff_sub2=%%TTD_SUPPLYVENDOR%%&aff_sub3=%%TTD_ADGROUPID%%&aff_sub4=%%TTD_CREATIVEID%%',
-                        cta_blog_two: 'http://zumobi.go2cloud.org/aff_c?offer_id=149&aff_id=1001&url_id=949&aff_sub=%%TTD_SITE%%&aff_sub2=%%TTD_SUPPLYVENDOR%%&aff_sub3=%%TTD_ADGROUPID%%&aff_sub4=%%TTD_CREATIVEID%%',
-                        creativeData: '{"creative_id":"bp0k5aw0","ad_format":"%%TTD_ADFORMAT%%","supply_vendor":"%%TTD_SUPPLYVENDOR%%","partner_id":"%%TTD_PARTNERID%%","advertiser_id":"%%TTD_ADVERTISERID%%","ad_group_id":"%%TTD_ADGROUPID%%","campaign_id":"%%TTD_CAMPAIGNID%%","site":"%%TTD_SITE%%","device_type":"%%TTD_DEVICETYPE%%","device_id":"%%TTD_DEVICEID%%","zip_code":"%%TTD_ZIPCODE%%","lat":"%%TTD_LAT%%","long":"%%TTD_LONG%%"}'
-                      });
-                    };
-                    ifr.contentWindow.document.body.appendChild(s);
-                  };
-                  c.appendChild(ifr);
-                })()
-              </script>
-
-            </div>
-          </a>
-
-        </section>
-
-      </div>
-
-
-
-      <!----->
-      <!-- number 3-->
-
-
-      <div class='z-main-wrapper3'>
-
-
-
-        <section class="z-main3" style="height: 100vh; top:0px">
-
-          <a class="z-main__link">
-            <div id="ZCMZ-666">
-              <a id="zclose3" class="close" style="margin-top: 5px; z-index: 5; width: 100%; padding:0; " href="#">
-                <div class="box box2" style="margin-right:15px; width:20px; float:right; border:3px solid white">
-                  <svg viewbox="0 0 40 40">
-                    <path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
-                  </svg>
-                </div>
-              </a>
-              <script>
-                (function () {
-                  var c = document.getElementById('ZCMZ-666'),
-                    ifr = document.createElement('iframe'),
-                    ifrs = ifr.style;
-                  ifr.setAttribute('scrolling', 'no');
-                  ifrs.padding = ifrs.margin = ifrs.borderWidth = '0';
-                  ifr.onload = function () {
-                    var s = ifr.contentWindow.document.createElement('script');
-                    s.src = 'https://demo.microzines.com/xfinity/3-1/cmz.js?cb=' + Date.now();
-                    s.onload = function () {
-                      ifr.contentWindow.zcmz_lbs('ZCMZ-666', 'https://demo.microzines.com/xfinity/home-security-31.html#xfinity/home-security-31', 768, 1024, {
-                        mode: 'interstitial',
-                        cta_hero: 'http://zumobi.go2cloud.org/aff_c?offer_id=149&aff_id=1001&url_id=943&aff_sub=%%TTD_SITE%%&aff_sub2=%%TTD_SUPPLYVENDOR%%&aff_sub3=%%TTD_ADGROUPID%%&aff_sub4=%%TTD_CREATIVEID%%',
-                        cta_blog: 'http://zumobi.go2cloud.org/aff_c?offer_id=149&aff_id=1001&url_id=939&aff_sub=%%TTD_SITE%%&aff_sub2=%%TTD_SUPPLYVENDOR%%&aff_sub3=%%TTD_ADGROUPID%%&aff_sub4=%%TTD_CREATIVEID%%',
-                        cta_blog_two: 'http://zumobi.go2cloud.org/aff_c?offer_id=149&aff_id=1001&url_id=949&aff_sub=%%TTD_SITE%%&aff_sub2=%%TTD_SUPPLYVENDOR%%&aff_sub3=%%TTD_ADGROUPID%%&aff_sub4=%%TTD_CREATIVEID%%',
-                        creativeData: '{"creative_id":"bp0k5aw0","ad_format":"%%TTD_ADFORMAT%%","supply_vendor":"%%TTD_SUPPLYVENDOR%%","partner_id":"%%TTD_PARTNERID%%","advertiser_id":"%%TTD_ADVERTISERID%%","ad_group_id":"%%TTD_ADGROUPID%%","campaign_id":"%%TTD_CAMPAIGNID%%","site":"%%TTD_SITE%%","device_type":"%%TTD_DEVICETYPE%%","device_id":"%%TTD_DEVICEID%%","zip_code":"%%TTD_ZIPCODE%%","lat":"%%TTD_LAT%%","long":"%%TTD_LONG%%"}'
-                      });
-                    };
-                    ifr.contentWindow.document.body.appendChild(s);
-                  };
-                  c.appendChild(ifr);
-                })()
-              </script>
-
-            </div>
-          </a>
-
-        </section>
-
-      </div>
-
 
       <!---->
 
@@ -6039,7 +5946,7 @@
             </div>
           </div>
           <div class="channel__content">
-            <div id="example1" class="card card--large csf-block"><a class="preview ratio16x9 border-clickable">
+            <div class="card card--large csf-block"><a class="preview ratio16x9">
                 <div class="preview__overflow-wrapper">
                   <div class="preview__image preview__image--non-progressive"
                     style="background-image: url(./images/hero-article1.jpg"></div>
@@ -6063,7 +5970,7 @@
             <div class="channel__columns">
               <div class="channel__column csf-block ">
                 <div class="card card--small ">
-                  <div id="example2" class="preview ratio16x9 border-clickable">
+                  <div class="preview ratio16x9">
                     <progressive-image class="preview__image show-img" background-image="./images/hero-article2.jpg"
                       enhanced="" style="background-image: url(./images/hero-article2.jpg"></progressive-image>
                   </div>
@@ -6091,10 +5998,11 @@
                     class="str-adunit str-lead-block-unit str-unique-1538172757590 card card--small str-clickout str-editorial- str-insights-"
                     data-str-native-key="QLWstPVbbpcwuyqK5ijhxZvL" data-str-campaign-key="DSKqhQ1A15bVV4DCPGHksEiVWB"
                     data-str-rendered="1538172757595" data-str-visited-flag="true" style="cursor: pointer;">
-                    <div class="str-thumb border-clickable"
-                      style="width: 100%; height: auto; background-size: cover; background-position: 50% center; background-repeat: no-repeat; background-color: rgb(238, 238, 238); padding-bottom: 56.08%; background-image: url(&quot;./images/hero-article3.jpg&quot;);">
-                    </div>
-                    <h2 class="card__fl-logo"> <span class="affiliate" style="color:#737373;">Sed</span>
+                    <div class="str-thumb" style=" width: 100%; height: auto; background-size: cover; background-position: 50% center;
+                      background-repeat: no-repeat; background-color: rgb(238, 238, 238); padding-bottom: 56.08%;
+                      background-image: url(&quot;./images/hero-article3.jpg&quot;);"> </div>
+                    <h2 class="card__fl-logo">
+                      <span class="affiliate" style="color:#737373;">Sed</span>
                       <span class="brand-voice" style="color: #c41a23;text-transform:uppercase;">Iaculis</span>
                       <span class="insights" style="color: #5c76f6; text-transform:uppercase;display:none;">Finibus
                         Vehicula</span> </h2>
@@ -6103,9 +6011,11 @@
                     </div>
                     <p class="body--dense"></p>
                     <div class="str-description" style="display:none;">Donec ultrices tincidunt arcu non sodales
-                      neque sodales ut etiam. Consequat mauris nunc congue nisi vitae suscipit tellus mauris a...</div>
+                      neque sodales ut etiam. Consequat mauris nunc congue nisi vitae suscipit tellus mauris a...
+                    </div>
                     <a class="card__fl-link" style="display: inline;"><span
-                        style="font-weight: normal;">By&nbsp;</span><span class="author"><b>Ineu Bibendum</b></span></a>
+                        style="font-weight: normal;">By&nbsp;</span><span class="author"><b>Ineu
+                          Bibendum</b></span></a>
                     <style>
                       .str-lead-block-unit h2 span {
                         letter-spacing: 0;
@@ -6144,59 +6054,42 @@
 
               </div>
 
-              <!--300 X 250-->
-              <br>
-              <div id="ZCMZ-576375" class="bofaml">
-                <script>
+
+            </div>
+
+            <div class="channel__sidebar channel__sidebar--editors-pick">
+              <div id="example4">
+                <div id="ZCMZ-564326" style="height:600px">
+                  <!-- <a id="zclose" class="close" href="#">
+                    <div class="box box2" style="float:right; margin-right:10px;">
+                      <svg viewbox="0 0 40 40">
+                        <path class="close-x" d="M 10,10 L 30,30 M 30,10 L 10,30" />
+                      </svg>
+                    </div>
+                  </a> -->
+                  <script>
                     (function () {
-                      var c = document.getElementById('ZCMZ-576375'),
+                      var c = document.getElementById('ZCMZ-564326'),
                         ifr = document.createElement('iframe'),
                         ifrs = ifr.style;
                       ifr.setAttribute('scrolling', 'no');
-                      ifrs.padding = ifrs.borderWidth = '0';
-                      ifrs.display = 'flex';
-                      ifrs.margin = '0 auto';
+                      ifrs.padding = ifrs.margin = ifrs.borderWidth = '0';
                       ifr.onload = function () {
                         var s = ifr.contentWindow.document.createElement('script');
-                        s.src = 'http://cdn-prototype.microsites.partnersite.mobi/bofamlhmz/mz/cmz.js?cb=';
+                        s.src = 'http://cdn.microsites.partnersite.mobi/charlesschwab/mz/cmz.js?cb=' + Date.now();
                         s.onload = function () {
-                          ifr.contentWindow.zcmz_lbs('ZCMZ-576375', 'http://cdn-prototype.microsites.partnersite.mobi/bofamlhmz/bankofamericamerrilllynchhmz.html#bofamlhmz/bankofamericamerrilllynchhmz', 300, 250, {
-                            cta_hero: 'http://zumobi.go2cloud.org/aff_c?offer_id=163&amp;aff_id=1001&amp;url_id=1115&amp;aff_sub=%%TTD_SITE%%&amp;aff_sub2=%%TTD_SUPPLYVENDOR%%&amp;aff_sub3=%%TTD_ADGROUPID%%&amp;aff_sub4=%%TTD_CREATIVEID%%',
-                            cta_explore: 'http://zumobi.go2cloud.org/aff_c?offer_id=163&amp;aff_id=1001&amp;url_id=1117&amp;aff_sub=%%TTD_SITE%%&amp;aff_sub2=%%TTD_SUPPLYVENDOR%%&amp;aff_sub3=%%TTD_ADGROUPID%%&amp;aff_sub4=%%TTD_CREATIVEID%%',
-                            creativeData: '{"creative_id":"%%TTD_CREATIVEID%%","ad_format":"%%TTD_ADFORMAT%%","supply_vendor":"%%TTD_SUPPLYVENDOR%%","partner_id":"%%TTD_PARTNERID%%","advertiser_id":"%%TTD_ADVERTISERID%%","ad_group_id":"%%TTD_ADGROUPID%%","campaign_id":"%%TTD_CAMPAIGNID%%","site":"%%TTD_SITE%%","device_type":"%%TTD_DEVICETYPE%%","device_id":"%%TTD_DEVICEID%%","zip_code":"%%TTD_ZIPCODE%%","lat":"%%TTD_LAT%%","long":"%%TTD_LONG%%"}'
+                          ifr.contentWindow.zcmz_lbs('ZCMZ-564326', 'http://cdn.microsites.partnersite.mobi/charlesschwab/retirementplanning.html#charlesschwab/retirementplanning', 300, 600, {
+                            mode: 'interstitial'
                           });
                         };
                         ifr.contentWindow.document.body.appendChild(s);
                       };
                       c.appendChild(ifr);
                     })()
-                </script>
-              </div>
-              <br>
-              <!--end 300 X 350-->
-            </div>
-
-            <div class="channel__sidebar channel__sidebar--editors-pick">
-
-              <div id="example4" style="background: white; z-index:666; position:relative">
-
-                <div class="border-clickable">
-                  <img src="images/Hero-Dinner-Party.jpg" />
+                  </script>
                 </div>
-                <h2 class="card__fl-logo"> <span class="affiliate" style="color:#737373;">Ornare</span>
 
-                  <span class="brand-voice" style="color: #c41a23;text-transform:uppercase;">Quam</span>
-                  <span class="insights" style="color: #5c76f6; text-transform:uppercase;display:none;">Tincidunt
-                    Parturient</span> </h2>
-                <div class="headlink" style="cursor:inherit;text-align:left;">
-                  <h3 class="h3--dense str-title">Tempus iaculis urna id volutpat</h3>
-                </div>
-                <a class="card__fl-link" style="display: inline;"><span
-                    style="font-weight: normal;">By&nbsp;</span><span class="author"><b>Aliquet Tellus</b></span></a>
-                <br>
               </div>
-
-
 
               <div class="data-viz__users">
                 <div class="data-viz__active-number-wrapper">
@@ -6297,8 +6190,10 @@
                       href="https://www.forbes.com/sites/parmyolson/2018/09/26/exclusive-whatsapp-cofounder-brian-acton-gives-the-inside-story-on-deletefacebook-and-why-he-left-850-million-behind/"
                       data-ga-track="Trending - Article - Exclusive: WhatsApp Cofounder Brian Acton Gives The Inside Story On #DeleteFacebook And Why He Left $850 Million Behind"
                       title="Exclusive: WhatsApp Cofounder Brian Acton Gives The Inside Story On #DeleteFacebook And Why He Left $850 Million Behind"
-                      class="data-viz__title body--dense-merriweather">Habitasse platea dictumst vestibulum rhoncus est
-                      pellentesque. Elementum tempus egestas sed sed risus. Lacus vel facilisis volutpat est.</a></div>
+                      class="data-viz__title body--dense-merriweather">Habitasse platea dictumst vestibulum rhoncus
+                      est
+                      pellentesque. Elementum tempus egestas sed sed risus. Lacus vel facilisis volutpat est.</a>
+                  </div>
                 </li>
                 <li data-index="6" data-key="blogAndPostId/blog/post/3648-3269" class="data-viz__item"
                   style="transform: translateY(600px);">
@@ -6314,7 +6209,8 @@
                       data-ga-track="Trending - Article - How To Encourage Honest Business Relationships In The Post-Truth World"
                       title="How To Encourage Honest Business Relationships In The Post-Truth World"
                       class="data-viz__title body--dense-merriweather">Leo
-                      integer malesuada nunc vel risus commodo viverra. Enim sed faucibus turpis in eu mi bibendum. </a>
+                      integer malesuada nunc vel risus commodo viverra. Enim sed faucibus turpis in eu mi bibendum.
+                    </a>
                   </div>
                 </li>
                 <li data-index="5" data-key="blogAndPostId/blog/post/3648-3278" class="data-viz__item"
@@ -6330,7 +6226,8 @@
                       href="https://www.forbes.com/sites/chrismyers/2018/09/18/how-to-accept-process-and-learn-from-failure/"
                       data-ga-track="Trending - Article - How To Accept, Process, And Learn From Failure"
                       title="How To Accept, Process, And Learn From Failure"
-                      class="data-viz__title body--dense-merriweather">Volutpat maecenas volutpat blandit aliquam etiam
+                      class="data-viz__title body--dense-merriweather">Volutpat maecenas volutpat blandit aliquam
+                      etiam
                       erat velit. </a></div>
                 </li>
                 <li data-index="8" data-key="blogAndPostId/blog/post/6248-6" class="data-viz__item"
@@ -6551,7 +6448,8 @@ Global Finance Leader Study: Unlock the Power of Advanced Analytics by Combining
                       data-ga-track="Trending - Article - In The Distant Future, All Black Holes In The Universe Will Share The Same Fate"
                       title="In The Distant Future, All Black Holes In The Universe Will Share The Same Fate"
                       class="data-viz__title body--dense-merriweather">Amet
-                      consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Orci dapibus ultrices
+                      consectetur adipiscing elit pellentesque habitant morbi tristique senectus. Orci dapibus
+                      ultrices
                       in iaculis nunc sed augue. </a></div>
                 </li>
                 <li data-index="18" data-key="blogAndPostId/blog/post/5893-78" class="data-viz__item data-viz__hide"
@@ -6730,7 +6628,7 @@ Global Finance Leader Study: Unlock the Power of Advanced Analytics by Combining
                     data-ga-track="Channel - Block A - Money - Position 0 - John Dobosz">Et
                     Malesuada</a></span></p>
             </div>
-            <div class="channel__sidebar">
+            <div class="channel__sidebar btn">
               <div class="card card--small"><a class="preview ratio16x9"
                   href="https://www.forbes.com/sites/antoinegara/2018/09/25/mbas-in-pjs-inside-2u-the-47-billion-startup-that-brings-top-schools-to-your-laptop/"
                   aria-label="Ivory Tower In The Cloud: Inside 2U, The $4.7 Billion Startup That Brings Top Schools To Your Laptop"
@@ -6781,74 +6679,15 @@ Global Finance Leader Study: Unlock the Power of Advanced Analytics by Combining
       document.querySelector('.z-main-wrapper').classList.toggle("on");
     });
 
-    var example1 = document.getElementById("example1");
-    example1.addEventListener('click', function (event) {
-      console.log('example1');
-      event.preventDefault();
-      event.stopPropagation();
-      document.querySelector('.z-main-wrapper').classList.toggle("on");
-      return false;
-    });
-    var zclose = document.querySelector('#zclose');
-    zclose.addEventListener('click', function (event) {
-      //document.querySelector('.z-main-wrapper').classList.toggle("on");
-      event.preventDefault();
-      event.stopPropagation();
-      window.open("./news_detail.html", "_self")
-      document.querySelector('.z-main-wrapper2').classList.toggle("on");
-    });
-    var zclose2 = document.querySelector('#zclose2');
-    zclose2.addEventListener('click', function (event) {
-      //document.querySelector('.z-main-wrapper').classList.toggle("on");
-      event.preventDefault();
-      event.stopPropagation();
-      window.open("./news_detail.iPad.alt.html", "_self")
-      //window.open("./news_detail.iPad.html", "_self")
-      //document.querySelector('.z-main-wrapper2').classList.toggle("on");
-    });
 
-    //second guy.
-    var example2 = document.getElementById("example2");
-
-    example2.addEventListener('click', function (event) {
-
-      event.preventDefault();
-      event.stopPropagation();
-      document.querySelector('.z-main-wrapper2').classList.toggle("on");
-      document.querySelector('#darken').classList.toggle("on");
-      document.querySelector('#main').classList.toggle("doBlur");
-
-      return false;
-    });
-
-    //second guy.
-    var example3 = document.getElementById("example3");
-
-    example3.addEventListener('click', function (event) {
-
-      event.preventDefault();
-      event.stopPropagation();
-      document.querySelector('.z-main-wrapper3').classList.toggle("on");
-      return false;
-    });
-
-    var example4 = document.getElementById("example4");
-    example4.addEventListener('click', function (event) {
-      console.log('example4');
-      event.preventDefault();
-      event.stopPropagation();
-      window.open("./news_detail.iPad.alt.two.html", "_self")
-      return false;
-    });
-
-    var zclose3 = document.querySelector('#zclose3');
-    zclose3.addEventListener('click', function (event) {
-      //document.querySelector('.z-main-wrapper').classList.toggle("on");
-      event.preventDefault();
-      event.stopPropagation();
-      window.open("./news_detail.iPad.html", "_self")
-      //document.querySelector('.z-main-wrapper2').classList.toggle("on");
-    });
+    // var zclose = document.querySelector('#zclose');
+    // zclose.addEventListener('click', function (event) {
+    //   //document.querySelector('.z-main-wrapper').classList.toggle("on");
+    //   event.preventDefault();
+    //   event.stopPropagation();
+    //   window.open("./news_detail.html", "_self")
+    //   document.querySelector('.z-main-wrapper2').classList.toggle("on");
+    // });
 
   </script>
 
